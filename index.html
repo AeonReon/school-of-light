@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>The School of Light — Raising children for the world they will grow up in | North Coast, NI</title>
-  <meta name="description" content="A growing group of North Coast families who meet, explore and learn together — and a permanent place being prepared where children play and work while their parents stay close. Children 2 to 8. Apply for an invitation to the next day out." />
+  <meta name="description" content="A community of Northern Irish families raising our children together — no drop-off, ever. Regular days out now, and a permanent place in preparation where children learn and play while their parents work in the next room. Children 3 to 8, alongside school or instead of it." />
   <meta name="theme-color" content="#2C6F9E" />
-  <meta property="og:title" content="The School of Light — for the world they will grow up in" />
-  <meta property="og:description" content="North Coast families raising children for the world ahead. Regular days out together now, and a permanent place in preparation. Children 2 to 8." />
+  <meta property="og:title" content="The School of Light — raise them yourself, just not on your own" />
+  <meta property="og:description" content="Raise them yourself. Just not on your own. Northern Irish families raising children 3 to 8 together — days out now, and a permanent place where parents stay. Alongside school, or instead of it." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/hero-families.jpg" />
   <link rel="icon" href="images/favicon.png" />
@@ -188,19 +188,27 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.55); pointer-events: none;
     }
 
-    .hero-tail { display: grid; gap: 16px; justify-items: center; text-align: center; }
-    .hero-chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: var(--paper-warm); border: 1px solid rgba(79,164,210,.3);
-      color: var(--ink-soft); font-weight: 700; font-size: .82rem;
-      padding: 8px 14px; border-radius: var(--radius-pill);
+    .hero-points { display: grid; gap: 13px; margin-top: 22px; text-align: left; }
+    .hero-point {
+      position: relative; padding-left: 31px; font-size: .98rem;
+      color: var(--ink-soft); line-height: 1.55;
     }
-    .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--leaf); flex: none; }
-    .chip.sky .dot { background: var(--sky); }
-    .chip.sun .dot { background: var(--sun-deep); }
+    .hero-point::before {
+      content: '✓'; position: absolute; left: 0; top: -1px;
+      font-weight: 800; color: var(--sky-deep); font-size: 1.06rem;
+    }
+    .hero-point strong { color: var(--ink); font-weight: 700; }
+
+    .hero-tail { display: grid; gap: 14px; justify-items: center; text-align: center; }
     .hero-tail .btn-primary { width: 100%; }
     .hero-tail .cta-note { margin-top: 0; }
+
+    /* The one-line definition, right under the fold */
+    .short-version {
+      text-align: center; font-size: 1.06rem; color: var(--ink-soft);
+      max-width: 44em; margin: 0 auto 24px; line-height: 1.6;
+    }
+    .short-version strong { color: var(--ink); font-weight: 700; }
 
     /* ─── Trust band ─── */
     .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -397,7 +405,6 @@
       .hero-image { grid-area: image; aspect-ratio: 1/1; align-self: center; }
       .hero-tail { grid-area: tail; justify-items: start; text-align: left; align-self: start; }
       .hero-brand { justify-content: flex-start; }
-      .hero-chips { justify-content: flex-start; }
       .hero-sub { font-size: 1.16rem; margin: 0; }
       .hero-tail .btn-primary { width: auto; }
       .hero h1 { margin-bottom: 18px; }
@@ -432,11 +439,19 @@
           <div class="place">North Coast · Northern Ireland</div>
         </div>
       </div>
-      <h1>Let’s raise them <span class="em">together</span>.</h1>
+      <span class="eyebrow">Children 3 to 8 · Parents stay · Applications open</span>
+      <h1>Raise them yourself. <span class="em">Just not on your own.</span></h1>
       <p class="hero-sub">
-        A group of Northern Irish families who meet up, explore and learn together — giving our children
-        real friends, real days out, and a childhood built for the world ahead rather than the one that has gone.
+        The School of Light is a community of Northern Irish families raising our children together —
+        regular days out now, and a permanent place in preparation where children learn and play while
+        their parents work in the next room.
       </p>
+      <div class="hero-points">
+        <p class="hero-point"><strong>No drop-off, ever.</strong> You stay in the building — working, watching, or joining in. Your child is never handed over to somebody you have not met.</p>
+        <p class="hero-point"><strong>Everything that is hard to do on your own.</strong> The friends, the group projects, the equipment, the specialists, the trips. The part a kitchen table cannot give them.</p>
+        <p class="hero-point"><strong>Alongside school, or instead of it.</strong> Children in school come at weekends and in the holidays. Home-educating families use it as their week.</p>
+        <p class="hero-point"><strong>Built for the world they are moving into.</strong> Real tasks and real problems, rather than memorising what a machine already knows.</p>
+      </div>
     </div>
 
     <div class="hero-image">
@@ -444,11 +459,6 @@
     </div>
 
     <div class="hero-tail">
-      <div class="hero-chips">
-        <span class="chip"><span class="dot"></span>Days out running now</span>
-        <span class="chip sky"><span class="dot"></span>Parents come too</span>
-        <span class="chip sun"><span class="dot"></span>Ages 2 to 8</span>
-      </div>
       <a href="#apply" class="btn-primary large">Apply for an Invitation</a>
       <p class="cta-note">You are applying for an invitation to the next day out.<br />Nothing to sign, nothing to commit to.</p>
     </div>
@@ -456,10 +466,14 @@
 </header>
 
 <!-- ═══ 2 · Trust band ═══ -->
-<section class="bg-warm" style="padding: 34px 0;">
+<section class="bg-warm" style="padding: 34px 0 38px;">
+  <div class="container">
+    <p class="short-version">Not childcare. Not a school. <strong>A group of families doing the most important part
+      themselves</strong> — with the friends, the places and the equipment that make it possible, all in one place.</p>
+  </div>
   <div class="container facts">
     <div class="fact"><span class="big">Already going</span><span class="small">Families meeting up and exploring together now.</span></div>
-    <div class="fact"><span class="big">Ages 2 – 8</span><span class="small">The stage the whole thing is built around.</span></div>
+    <div class="fact"><span class="big">Ages 3 – 8</span><span class="small">The stage the whole thing is built around.</span></div>
     <div class="fact"><span class="big">8am – 8pm</span><span class="small">The hours the facility will keep. Seven days.</span></div>
     <div class="fact"><span class="big">Days Out NI</span><span class="small">By the people behind NI's biggest days out guide.</span></div>
   </div>
@@ -485,7 +499,7 @@
           parents included.</p>
         <ul>
           <li>Weekly, rather than the once a month most groups manage</li>
-          <li>Children 2 to 8, with their brothers and sisters</li>
+          <li>Children 3 to 8, with their brothers and sisters</li>
           <li>Your children make real friends — and so do you</li>
           <li>Fits around school: weekends, holidays, days off</li>
           <li>Easy to join, small cost, nothing long to sign</li>
@@ -762,7 +776,7 @@
   <div class="container-narrow fade-up">
     <dl class="offer-box">
       <div class="offer-row"><dt>Where</dt><dd>The North Coast of Northern Ireland — and wherever the days out take us. The facility is being chosen around the families, so where you live genuinely affects where it lands.</dd></div>
-      <div class="offer-row"><dt>Who it is for</dt><dd>Children 2 to 8, with their brothers and sisters. School, home-educated, or a mix — all welcome. The parent comes too.</dd></div>
+      <div class="offer-row"><dt>Who it is for</dt><dd>Children 3 to 8, with their brothers and sisters. School, home-educated, or a mix — all welcome. The parent comes too.</dd></div>
       <div class="offer-row"><dt>The days out</dt><dd>Running now, building towards weekly. Parks, buses, beaches, forests, workshops. Easy to join, small cost, nothing long to sign.</dd></div>
       <div class="offer-row"><dt>The facility</dt><dd>In preparation. 8am to 8pm, seven days, come and go as your week needs. A small number of families, a much larger monthly cost, and a much closer fit required.</dd></div>
       <div class="offer-row"><dt>Your part</dt><dd>You — or an adult you personally trust — are with your child. You remain responsible for them, exactly as you would be at a park or a soft play.</dd></div>
@@ -823,7 +837,7 @@
     </div>
     <div class="faq-item">
       <button class="faq-q" aria-expanded="false">What ages is it for?</button>
-      <div class="faq-a"><p>Two to eight is what the whole thing is built around. If you have a nine-year-old and a five-year-old, bring them both — a year or so either side is completely fine, and we would far rather you came than stayed home over a birthday.</p></div>
+      <div class="faq-a"><p>Three to eight is what the whole thing is built around. If you have a nine-year-old and a five-year-old, bring them both — a year or so either side is completely fine, and we would far rather you came than stayed home over a birthday.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" aria-expanded="false">What does it cost?</button>
