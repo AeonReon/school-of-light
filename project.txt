@@ -1,0 +1,58 @@
+Project: The School of Light
+Type: Direct-response application + waiting list site (single CTA)
+Slug: school-of-light
+Folder: WEBSITES/PROJECTS/TO BE BUILT/SchoolOfLight/
+Created: 2026-08-19
+Account: AeonReon (GitHub) / aeonreon team (Vercel)
+
+WHAT IT IS
+A home-education community on the North Coast of Northern Ireland. A facility — barn,
+garden, quiet house, work rooms — where children aged 3-7 play, build and learn in a
+group, AND their parents stay on site. Parents work in a dedicated work zone, remain
+legally responsible for their own child, and help shape what the children do.
+Open 8am-8pm, six days a week. Families come and go within that window.
+
+Public framing: "The School of Light — a home-education community on the North Coast."
+NOT a registered school. Parents elect home education; we provide place, group, programme.
+
+THE ONE CTA
+"Apply for a Place" -> scrolls to #apply. Repeated 6+ times. No nav, no second action.
+
+FUNNEL (internal)
+1. Conscious Parenting NI app (School of Light premium tile) -> this site
+2. Stage 1 form (2 min: name, email, phone, town, children's ages, why)
+3. Stage 2 values questionnaire (revealed inline on success, same Web3Forms endpoint)
+4. Invitation to an OPEN FUN DAY - families meet, children play, everyone tests the fit
+5. A place when a place opens
+Launch happens when the founding group (10-20 children) is together. No launch date is
+ever stated on the page - "places open when places open".
+
+PRICING (internal - NOT on the page)
+Thinking ~£500/month founding rate, ~£1000/month after, plus add-ons. The page says only:
+paid programme, founding families hold the lowest rate for as long as they stay, figure
+shared with families invited forward.
+
+FORM
+Web3Forms AJAX -> school@aeonreon.com (catch-all mailbox at aeonreon.com).
+Access key placeholder: YOUR_WEB3FORMS_ACCESS_KEY  (swap before/at launch)
+Honeypot + hidden redirect="" + inline success state.
+
+PALETTE (carried from the School of Light tile in the Conscious Parenting app)
+accent #A5670C deep gold / bright #F0C557 / soft #FBF3DA / cream #FFFCF5 / warm #FDF4E3
+ink #241F17 / dark #1B1A16 (warm charcoal). 3 dark beats: learning / places / apply.
+
+DELIBERATE DEVIATIONS FROM THE DIRECT-RESPONSE TEMPLATE
+- NO countdown timer. The user rejected naming a launch date; urgency comes from the
+  founding-group size and the open-day invitation instead.
+- NO testimonials. There are no families yet. Nothing is invented on a children's site.
+- Honest scarcity only (10-20 children is genuinely the cap).
+
+IMAGES
+Sourced via the browser engine Google Images pass:
+  APPS/days-out-scraper/image-engine/google-pass.mjs school-of-light jobs-school-of-light.json
+Candidates staged in image-engine/staging/school-of-light/<slot>/g_*.jpg, eyeballed on
+contact sheets, best copied into images/. To be replaced with custom AI images later.
+
+DOMAIN
+Vercel for now (school-of-light.vercel.app). User owns thenationoflight.com and may point
+school.thenationoflight.com at it later, or buy a dedicated domain.
