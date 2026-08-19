@@ -1,58 +1,75 @@
 Project: The School of Light
-Type: Direct-response application + waiting list site (single CTA)
+Type: Direct-response application site (single CTA), mobile-first
 Slug: school-of-light
 Folder: WEBSITES/PROJECTS/TO BE BUILT/SchoolOfLight/
-Created: 2026-08-19
+Created: 2026-08-19  |  Reframed: 2026-08-19 (v2)
 Account: AeonReon (GitHub) / aeonreon team (Vercel)
+Live: https://school-of-light-seven.vercel.app
 
-WHAT IT IS
-A home-education community on the North Coast of Northern Ireland. A facility — barn,
-garden, quiet house, work rooms — where children aged 3-7 play, build and learn in a
-group, AND their parents stay on site. Parents work in a dedicated work zone, remain
-legally responsible for their own child, and help shape what the children do.
-Open 8am-8pm, six days a week. Families come and go within that window.
+WHAT IT IS  (v2 framing — supersedes the homeschool-only v1)
+A group of North Coast families raising children for the world ahead. NOT homeschool-only —
+school families, home-educating families and everything between are all welcome. Two levels:
 
-Public framing: "The School of Light — a home-education community on the North Coast."
-NOT a registered school. Parents elect home education; we provide place, group, programme.
+  LEVEL 1 — THE DAYS OUT (running now, easy to join, small cost)
+    Regular days out together: parks, hired-coach trips, beaches, forests, workshops.
+    Weekly, vs the once-a-month most groups manage. Fits around school = weekends/holidays.
+    This is the front door and the actual CTA. A small group of families is ALREADY doing this.
+
+  LEVEL 2 — THE FACILITY (in preparation, selective, much larger monthly cost)
+    Permanent place on the North Coast: barn/indoor park, garden, quiet house, work rooms
+    + a parent work zone. 8am-8pm, SEVEN days. Parents stay on site and stay responsible.
+    Places go to families already known from the days out.
+
+Ages 2-8 for both, siblings a year either side welcome (so a 4 + an 8 can come together).
+
+CORE MESSAGE
+"Raising our children for the world ahead — not the one that has gone."
+The family is the centre; everything else is supplemental. Open to the best way — we take
+what holds up from Montessori, Waldorf, forest school and the classical tradition, and drop
+what does not. Preparing children for a world of machines that recall everything, so the
+weight goes on figuring it out, getting on with people, and finishing what you started.
+
+ECOSYSTEM
+Badged "from the people behind Days Out NI" (NI's biggest days out guide) + the Conscious
+Parenting NI app. Traffic comes from the School of Light tile on the app's education page.
 
 THE ONE CTA
-"Apply for a Place" -> scrolls to #apply. Repeated 6+ times. No nav, no second action.
+"Apply for an Invitation" -> #apply. 7 repeats. You are applying to be invited to the next
+DAY OUT, not signing up for a term. Funnel: apply -> we read it -> invited to a day out ->
+you decide -> facility place later for families we know.
 
-FUNNEL (internal)
-1. Conscious Parenting NI app (School of Light premium tile) -> this site
-2. Stage 1 form (2 min: name, email, phone, town, children's ages, why)
-3. Stage 2 values questionnaire (revealed inline on success, same Web3Forms endpoint)
-4. Invitation to an OPEN FUN DAY - families meet, children play, everyone tests the fit
-5. A place when a place opens
-Launch happens when the founding group (10-20 children) is together. No launch date is
-ever stated on the page - "places open when places open".
+NEVER SAY
+- "Founding families" / "founding group" (removed in v2 — leave the group size vague)
+- Any launch date or countdown for the facility
+- Any price figure
+- Long agitate copy about what schools are (v1 had a "part nobody says out loud" section;
+  removed on request — say what it IS, not what it is not. Revisit later.)
+- Invented testimonials. There are no families to quote yet.
 
-PRICING (internal - NOT on the page)
-Thinking ~£500/month founding rate, ~£1000/month after, plus add-ons. The page says only:
-paid programme, founding families hold the lowest rate for as long as they stay, figure
-shared with families invited forward.
+PRICING (internal, NOT on the page)
+Days out: small per-outing cost, deliberately easy. Facility: thinking ~£500/month for the
+earliest families, ~£1000/month after, plus add-ons. Page says only that earliest families
+hold the lowest rate and figures go to families invited forward.
+
+DESIGN
+MOBILE-FIRST. Base CSS is the phone; 620px and 900px are the enhancements. Palette lifted
+from Conscious Parenting NI / Days Out NI so all three read as one family:
+  sky #4FA4D2 / sky-deep #2C6F9E (CTA) / sun #FFCE3D / sun-soft #FFF3D6
+  paper #F6F8FB / paper-warm #EAF4FB / ink #1A2233 / dark #16202F
+Fonts: Poppins (headings) + Inter (body) — same as the app. 3 dark beats: new-world
+principles / how you join / apply.
 
 FORM
-Web3Forms AJAX -> school@aeonreon.com (catch-all mailbox at aeonreon.com).
-Access key placeholder: YOUR_WEB3FORMS_ACCESS_KEY  (swap before/at launch)
-Honeypot + hidden redirect="" + inline success state.
-
-PALETTE (carried from the School of Light tile in the Conscious Parenting app)
-accent #A5670C deep gold / bright #F0C557 / soft #FBF3DA / cream #FFFCF5 / warm #FDF4E3
-ink #241F17 / dark #1B1A16 (warm charcoal). 3 dark beats: learning / places / apply.
-
-DELIBERATE DEVIATIONS FROM THE DIRECT-RESPONSE TEMPLATE
-- NO countdown timer. The user rejected naming a launch date; urgency comes from the
-  founding-group size and the open-day invitation instead.
-- NO testimonials. There are no families yet. Nothing is invented on a children's site.
-- Honest scarcity only (10-20 children is genuinely the cap).
+Web3Forms AJAX -> school@aeonreon.com. Two stages: quick details, then the real questions
+revealed inline on success. Placeholder key: YOUR_WEB3FORMS_ACCESS_KEY (x2).
+Guard in JS: while the key is a placeholder the button says "Email us at school@aeonreon.com"
+rather than throwing an error.
 
 IMAGES
-Sourced via the browser engine Google Images pass:
-  APPS/days-out-scraper/image-engine/google-pass.mjs school-of-light jobs-school-of-light.json
-Candidates staged in image-engine/staging/school-of-light/<slot>/g_*.jpg, eyeballed on
-contact sheets, best copied into images/. To be replaced with custom AI images later.
+Sourced via the browser engine Google Images pass (google-pass.mjs), 4 passes, every
+candidate eyeballed on contact sheets. Staging cats: school-of-light, -2, -3, -4.
+To be replaced with custom AI images later where wanted.
 
 DOMAIN
-Vercel for now (school-of-light.vercel.app). User owns thenationoflight.com and may point
-school.thenationoflight.com at it later, or buy a dedicated domain.
+Vercel for now. User owns thenationoflight.com — school.thenationoflight.com is the likely
+home, or a dedicated domain later.
