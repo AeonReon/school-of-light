@@ -42,7 +42,7 @@ built the place where both happen at once. That is what we are building.
 
 ---
 
-## Part Two — The thirteen principles
+## Part Two — The fourteen principles
 
 ### 1. Nobody has more at stake than you
 
@@ -135,6 +135,19 @@ The aim is a community of high-minded, elegant, intelligent, helpful people who 
 throw themselves into it — and children who grow up assuming that is normal, because they never
 saw anything else.
 
+**Most of it travels by conversation.** A child who spends their days around thoughtful adults will
+outpace a child doing worksheets in a noisy room, without anybody sitting them down. Socrates taught
+by talking and nothing since has beaten it. What the adults discuss becomes what the children think
+about — so if the grown-ups are on about the television and who annoyed them this week, that is the
+inheritance. If they are on about ideas and things worth building, that is the inheritance instead.
+
+**Which is why we are careful about who is in the room.** A great deal of childcare and schooling is
+staffed by people whose own lives are visibly not going well, and children are then formed by that
+example for six hours a day. We are not interested in judging anybody's circumstances, and this is
+not about appearances for their own sake. It is simply that the adults here are the curriculum, so
+the adults here — facilitators and parents both — have to be people you would be glad for your child
+to grow into.
+
 This is not a demand for perfection. It is a standing commitment to improve, in public, alongside
 other people doing the same.
 
@@ -185,7 +198,22 @@ family becomes service to the group, and service to the group becomes a person w
 provide something their community actually wants. Waiting until twenty-five to begin learning
 that is a strange choice when they could begin at five.
 
-### 9. Get out and live
+### 9. Follow the body, not the clock
+
+If a child is hungry they eat. If they are tired they rest. If they need the bathroom they go. If
+their energy is high they climb, and when it drops they take themselves to the books or the costume
+box.
+
+None of that sounds radical until you notice that almost every system a child passes through does
+the opposite — eat now, sit now, sleep now, wait — and that a person trained out of their own signals
+for eleven years often spends their thirties trying to find them again.
+
+Reading your own hunger, tiredness, need to move and gut feeling is a real skill, and it is one of
+the few that genuinely lasts a lifetime. So we leave it in. Responsibly, and with adults nearby who
+notice when a child is getting it wrong — but the default is that the child's own body is a better
+guide to the child's own day than a bell is.
+
+### 10. Get out and live
 
 The days out are not a warm-up for the real thing. They are a statement of how we think a life
 should be used.
@@ -197,7 +225,7 @@ little and somebody with a great deal can both live this way; it is a decision, 
 Children raised by people who live like that do not need to be told to be ambitious about life.
 They assume it.
 
-### 10. The good, the true and the beautiful
+### 11. The good, the true and the beautiful
 
 We hold that there is such a thing as beauty, and that it is not purely a matter of taste. That
 some ways of living lead to flourishing and others lead somewhere dark. And that finding out
@@ -211,7 +239,7 @@ not.
 The destination we are aiming at: strong families, peaceful and beautiful places to live, and
 people who are a genuine credit to the community around them.
 
-### 11. Joy is a design requirement
+### 12. Joy is a design requirement
 
 Higher-mindedness is supposed to be enjoyable. Not solemn, not grim, not endured.
 
@@ -228,7 +256,7 @@ few produce a child who is excellent and delighted at the same time.
 So we are always asking the same question about everything we do: how could this be more
 enjoyable without being less good?
 
-### 12. Take the best of every method
+### 13. Take the best of every method
 
 When the UFC began, nobody actually knew whether boxing beat wrestling, or karate beat jiu-jitsu.
 Everybody had a tradition and a lot of confidence. So they put them against each other and found
@@ -252,7 +280,7 @@ We are doing the mixed version deliberately:
 And then we adapt again, continuously, based on the actual children in front of us and how they
 respond. No method owns us. What holds up, stays.
 
-### 13. One direction
+### 14. One direction
 
 A magnet works because every particle inside it faces the same way. Scatter the alignment and it
 is just a lump of metal.
@@ -278,7 +306,8 @@ Built from first principles and observable reality, that alignment is a very pow
 | Be the example | Culture code for adults. Emotional state treated as part of the offer. |
 | Children are useful now | Real jobs, real tools, children maintain their own space. |
 | Value for value | Shopkeepers, stalls, small events, fundraisers, an internal token system for real work. Ship what they build. |
-| Get out and live | The days out. Weekly, not monthly. |
+| Follow the body | Eat, rest, move and go when the body says, not when a bell does. |
+| Get out and live | The days out. Weekly, not monthly. Wide exposure on purpose. |
 | Good, true, beautiful | First-principles filter on every practice. Objective standards named. |
 | Joy | Fun as a KPI. If it is boring long-term, change it. |
 | Best of every method | AI academics on e-ink, Montessori materials, forest hours, business and philosophy. |
@@ -297,6 +326,38 @@ Built from first principles and observable reality, that alignment is a very pow
 - Money: the real numbers, the founding rate, the add-ons
 - Governance — how decisions get made once there are twenty families
 - The book: this document is the spine of it
+
+---
+
+## Appendix — the space
+
+The ideal is a barn: high ceilings, windows on every side, air that moves, and more than one level
+so children can be above and below each other. Almost nobody starts there and it does not matter —
+the principles scale down to one room.
+
+**Three sizes of the same idea**
+
+1. **One room.** Three zones even if they are only corners: something to climb on, somewhere soft
+   and quiet with books, and a low table with real tools and a bowl of water. Children invent the rest.
+2. **A hall or small unit.** Now you can separate loud from quiet properly, and add a corner with a
+   plug so a parent can take a call without leaving.
+3. **The barn.** An outdoor park brought indoors along a whole side. Two levels. Montessori benches
+   and a real kitchen along another. A library worth sitting in. A shop. A quiet room. Work pods for
+   the adults, or a caravan outside if the building cannot spare the corner.
+
+**What is in it:** light, height and moving air · a park indoors · more than one level · a real sink
+and a low kitchen · a library at every reading level · a chill zone with a projector · the shop ·
+a costume box · somewhere for the adults to work · several things happening at once.
+
+**What to weigh first:** loud and quiet in the same building (the hardest problem — solve it first) ·
+open sightlines · drying twenty coats and forty boots · what is underneath anything you build height
+onto · what you keep when the money runs out, which is climbing, then books, then water and a table.
+
+**What to leave out:** rows of desks · a bank of glowing tablets used to keep children quiet · a
+timetable on the wall that runs the day · character-branded plastic · a tuck shop · rooms that only
+one adult can see into.
+
+A well-run room beats a badly-run barn every day of the week.
 
 ---
 
