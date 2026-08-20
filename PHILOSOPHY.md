@@ -9,6 +9,14 @@ here — the app section, the website, The Thinking PDF, and eventually the book
 
 ## The one line
 
+> **Parents raising their own children, together.**
+
+That is the tagline, and it is the headline everywhere the school introduces itself. It says
+what we are in five words: not a service you hand a child to, and not a lonely job you do alone
+at a kitchen table.
+
+The longer version, when there is room for one:
+
 > Parents raising their own children, together, with the best of every method — and the
 > resources to actually do it.
 
@@ -48,7 +56,7 @@ built the place where both happen at once. That is what we are building.
 
 ---
 
-## Part Two — The seventeen principles
+## Part Two — The nineteen principles
 
 ### 1. Nobody has more at stake than you
 
@@ -71,7 +79,31 @@ is that they happen on a Saturday too.
 
 This is not about working less. It is about not missing their childhood while you do it.
 
-### 3. Find what lights them up — then push hard in that direction
+### 3. Nothing happens without you
+
+Ask a parent what is in their child's curriculum this term and most cannot tell you. It was
+written by people they have never met, for reasons never explained to them, and their agreement
+was never sought. Not refused — simply never sought, because the arrangement does not have a place
+for it.
+
+Here it is the other way round entirely. The plan is made **with your knowledge, with your input,
+and with your consent**, because you are standing in the building while it happens.
+
+That single change does more than it sounds like it does.
+
+- You know what your child did today, because you were there. No more asking at the school gate
+  and getting a shrug and "nothing".
+- Deciding what they learn next becomes a family conversation rather than a letter home.
+- The projects belong to everybody. You are not being briefed on your child's education — you are
+  in it, working on the same things, at your own level.
+- And it keeps going. Families who work on things together start doing it outside the building
+  too, and some of them will end up building something real together. That is not a side effect;
+  it is the point arriving early.
+
+A family that works on things as one unit stays one unit. That harmony is worth more over forty
+years than any set of results, and it is the thing the current arrangement quietly costs people.
+
+### 4. Find what lights them up — then push hard in that direction
 
 We do not begin with a predetermined outcome for a child. We begin by finding out who they
 already are.
@@ -84,7 +116,7 @@ Once you find it, you do not leave it at "that's nice." You put the resources, t
 the network behind it and push them hard in that direction — so they build a life on a real
 strength rather than a distributed mediocrity across subjects somebody else chose.
 
-### 4. A calm room is the curriculum
+### 5. A calm room is the curriculum
 
 Emotional chaos does more damage to a developing child than almost anything else on the list.
 A child who does not feel safe is not learning, whatever is written on the timetable.
@@ -100,7 +132,7 @@ So the environment is designed for steadiness first:
 Beauty is not decoration here. A beautiful, orderly, calm room teaches something a chaotic one
 cannot.
 
-### 5. Many eyes
+### 6. Many eyes
 
 There are always several adults in the room — multiple facilitators and multiple parents,
 every day, as a matter of how the place is built rather than as a rule anybody has to
@@ -122,7 +154,7 @@ room is full of people who love the children in it.
 > at length it is reassuring. Handled in one line it makes people think about things they were
 > not thinking about, so keep it light everywhere except the long form.
 
-### 6. Be the person you want them to become
+### 7. Be the person you want them to become
 
 Children learn from what adults do, not from what adults say. At three to eight, they are
 copying almost everything — tone of voice, temper, posture, how you treat a stranger, what you
@@ -157,7 +189,7 @@ to grow into.
 This is not a demand for perfection. It is a standing commitment to improve, in public, alongside
 other people doing the same.
 
-### 7. This is a family philosophy, not a children's programme
+### 8. This is a family philosophy, not a children's programme
 
 Most people send a child off to be developed and never once ask the same question of themselves.
 The child is the project; the adult is finished. That is the assumption underneath almost every
@@ -184,7 +216,7 @@ And the days out do more of this than anything else. A family that goes and does
 becomes a different family. Everybody in it gets sharper, better company and better at life — not
 just the children.
 
-### 8. Learn beside them, and let them teach you
+### 9. Learn beside them, and let them teach you
 
 A specialist comes in to teach rhythm, or drawing, or knots. The parents should be in that circle
 too — not supervising it from the edge.
@@ -215,7 +247,34 @@ Adults watch a video, use an app, book a course with somebody who actually does 
 to things because they are enjoyable. Then we send our children somewhere that does none of that
 and wonder why they resist. Do it the adult way, for everybody.
 
-### 9. Children are useful now
+### 10. We do not compare
+
+Nobody here is measured against anybody else — not the children, and not the adults.
+
+People are simply better at some things than others, and the spread is normal. A child who is
+years ahead in one subject may be years behind in another, and that is not a problem to be
+corrected, it is what a person looks like.
+
+**Start at the level you are actually at.** Not the level you think you should be at, and not the
+level somebody your age is supposed to be at. Level one is a fine place to begin at six or at
+forty-six, and it is the only place anybody has ever begun.
+
+**You are allowed to leave things alone.** It is often better to put a subject down entirely for a
+season while you build another one properly, then come back to it. When you do come back you will
+feel behind, and you will not be — you were doing something else on purpose. Priorities change
+through a childhood and through a life, and a plan that never allows for that is a plan that
+produces people who are mediocre at everything.
+
+**And this is hardest for the parents.** Sitting down at level one maths beside your six-year-old
+is genuinely uncomfortable. Being the beginner in the room when you are supposed to be the adult
+in it takes some swallowing. But it is what it is: you either begin where you are, or you do not
+begin. Children who watch a parent do that learn something no lesson delivers.
+
+We do publish general guides to what tends to be possible at each age, because they are useful for
+orientation — the way a map is useful. They are not a standard anybody has to meet, and nobody is
+behind for not meeting one.
+
+### 11. Children are useful now
 
 A child is not an apprentice person waiting until twenty-five to begin participating. They have
 real value the moment they can do a real thing.
@@ -233,7 +292,7 @@ live in. A child who takes care of their own place becomes an adult who takes ca
 around them. That is how you get people who are a real asset to their community, and there is no
 shortcut to it.
 
-### 10. Value for value, at their level
+### 12. Value for value, at their level
 
 We want children who understand, early and in their bones, that you get by giving something
 worth having. Not as a lecture about economics — as something they have actually done.
@@ -262,7 +321,7 @@ family becomes service to the group, and service to the group becomes a person w
 provide something their community actually wants. Waiting until twenty-five to begin learning
 that is a strange choice when they could begin at five.
 
-### 11. Follow the body, not the clock
+### 13. Follow the body, not the clock
 
 If a child is hungry they eat. If they are tired they rest. If they need the bathroom they go. If
 their energy is high they climb, and when it drops they take themselves to the books or the costume
@@ -277,7 +336,7 @@ the few that genuinely lasts a lifetime. So we leave it in. Responsibly, and wit
 notice when a child is getting it wrong — but the default is that the child's own body is a better
 guide to the child's own day than a bell is.
 
-### 12. One life, not compartments
+### 14. One life, not compartments
 
 Look at how a normal week is arranged. School is the boring part, so fun is scheduled for
 afterwards. Work is the part you endure, so the evening is the reward. The children are at home all
@@ -298,7 +357,7 @@ improves you too.
 Nothing there is being endured. That is the whole test: if a large part of the week is something
 you are getting through, the week is designed wrong.
 
-### 13. Get out and live
+### 15. Get out and live
 
 The days out are not a warm-up for the real thing. They are a statement of how we think a life
 should be used.
@@ -310,7 +369,7 @@ little and somebody with a great deal can both live this way; it is a decision, 
 Children raised by people who live like that do not need to be told to be ambitious about life.
 They assume it.
 
-### 14. The good, the true and the beautiful
+### 16. The good, the true and the beautiful
 
 We hold that there is such a thing as beauty, and that it is not purely a matter of taste. That
 some ways of living lead to flourishing and others lead somewhere dark. And that finding out
@@ -324,7 +383,7 @@ not.
 The destination we are aiming at: strong families, peaceful and beautiful places to live, and
 people who are a genuine credit to the community around them.
 
-### 15. Joy is a design requirement
+### 17. Joy is a design requirement
 
 Higher-mindedness is supposed to be enjoyable. Not solemn, not grim, not endured.
 
@@ -341,7 +400,7 @@ few produce a child who is excellent and delighted at the same time.
 So we are always asking the same question about everything we do: how could this be more
 enjoyable without being less good?
 
-### 16. Take the best of every method
+### 18. Take the best of every method
 
 When the UFC began, nobody actually knew whether boxing beat wrestling, or karate beat jiu-jitsu.
 Everybody had a tradition and a lot of confidence. So they put them against each other and found
@@ -365,7 +424,7 @@ We are doing the mixed version deliberately:
 And then we adapt again, continuously, based on the actual children in front of us and how they
 respond. No method owns us. What holds up, stays.
 
-### 17. One direction
+### 19. One direction
 
 A magnet works because every particle inside it faces the same way. Scatter the alignment and it
 is just a lump of metal.
@@ -385,12 +444,14 @@ Built from first principles and observable reality, that alignment is a very pow
 |---|---|
 | Nobody has more at stake | Parents stay on site. No drop-off. Parents keep legal responsibility. |
 | Provide and be present | Parent work zone. 8am–8pm, seven days. Come and go. |
+| Nothing happens without you | The plan is made with the parents, in the room. Projects shared across the family. |
 | Find what lights them up | Wide exposure, many days out, materials and tools everywhere, adults who watch and notice. |
 | A calm room | Natural materials, real food only, steady adults, beauty on purpose. |
 | Many eyes | Several facilitators and parents in the room, always. Open, visible spaces. |
 | Be the example | Culture code for adults. Emotional state treated as part of the offer. |
 | Family philosophy | An adult curriculum too — conversation, emotional control, coaching, NLP. Days out as the family's own development. |
 | Learn beside them | Parents in the circle, not on the edge. Children teaching adults. Roles flipping by topic. |
+| We do not compare | No ranking, no year groups. Start at your real level. Age guides are a map, not a standard. |
 | Children are useful now | Real jobs, real tools, children maintain their own space. |
 | Value for value | Shopkeepers, stalls, small events, fundraisers, an internal token system for real work. Ship what they build. |
 | One life | Work, learning, children and enjoyment in one place, so nothing has to be escaped from. |
@@ -480,6 +541,23 @@ A well-run room beats a badly-run barn every day of the week.
 
 ---
 
+## Internal only — the Nation of Light, and why we keep it separate
+
+The School of Light sits inside a larger idea: the **Nation of Light**. The school is the
+introductory step into it and the foundation the rest is built on.
+
+So the word *nation* will come back eventually, and it does not mean Northern Ireland or any
+country — it means the nation of light. **None of that is discussed in School of Light materials.**
+People come in through something concrete they can feel — a day out, a group of families, a place
+to work while their children play — and the larger philosophy is a gradual progression they move
+toward when they are ready for it.
+
+This is why the public copy avoids national language even where it would fit: not because the idea
+is unwelcome, but because it belongs to the next step and lands wrong if it arrives early.
+Community-level language on everything public. (The domain **thenationoflight.com** is already held.)
+
+---
+
 ## Reference points we are learning from
 
 - **Alpha School (US)** — young children running real small businesses with adult support for
@@ -509,5 +587,10 @@ A well-run room beats a badly-run barn every day of the week.
   things you will ever do for them."
 - "No self-respecting adult would ever agree to learn the way we ask children to."
 - "One life you do not need to escape from."
+- "Level one is a fine place to begin at six or at forty-six, and it is the only place anybody has
+  ever begun."
+- "You either begin where you are, or you do not begin."
+- "You are not being briefed on your child's education — you are in it."
+- "A family that works on things as one unit stays one unit."
 - "If a large part of the week is something you are getting through, the week is designed wrong."
 - "We would rather be right in five years than consistent for a hundred."
