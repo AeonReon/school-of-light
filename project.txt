@@ -59,11 +59,32 @@ from Conscious Parenting NI / Days Out NI so all three read as one family:
 Fonts: Poppins (headings) + Inter (body) — same as the app. 3 dark beats: new-world
 principles / how you join / apply.
 
-FORM
-Web3Forms AJAX -> school@aeonreon.com. Two stages: quick details, then the real questions
-revealed inline on success. Placeholder key: YOUR_WEB3FORMS_ACCESS_KEY (x2).
-Guard in JS: while the key is a placeholder the button says "Email us at school@aeonreon.com"
-rather than throwing an error.
+THE APPLICATION — apply.html (this is a designed experience, do not flatten it into a form)
+Nine screens, one question each, ~3 minutes. Every CTA on index.html points here.
+Placeholder key: YOUR_WEB3FORMS_ACCESS_KEY (once, top of the script). Guard: while it is a
+placeholder the button says "Email it to school@aeonreon.com" instead of erroring.
+One Web3Forms POST at the very end with every answer. localStorage keeps a half-finished
+application alive (key: sol-application-v1), cleared on success.
+
+  0  The open        Tone + permission to leave + first small yes ("I would like to be considered")
+  1  Children's ages Tap chips. Zero friction, and it is about their child not about them
+  2  School status   Four options, ALL valid. A mirror, not a filter - teaches that the group is broad
+  3  Principle: tasks not tests   They read it, then react. Endorsing it is a small commitment
+  4  Principle: you stay          The real filter. "What I need is childcare" -> the exit screen
+  5  "What do you want your child to be like at eighteen?"  The emotional core. Gated at 5+ words
+  6  What could you bring         Flips them from customer to member. Chips + optional text
+  7  Details                      Name/email/town/phone/days. LAST, when they are already invested
+  8  Done                         Peak-end: their own words played back, what happens next, the five
+                                  things we believe, one thing to try this week, links to the apps
+  9  The exit                     Warm, honest, hands them Days Out NI + Conscious Parenting instead
+
+WHY IT IS BUILT THIS WAY (keep these if the page is ever rewritten)
+- Self-persuasion: they state the philosophy in their own words, so they own it
+- Effort justification: the more they put in, the more the place is worth to them
+- Progressive commitment: micro-yeses first, personal data last
+- Real turn-away: the exit screen is what makes acceptance mean something
+- Peak-end: the last screen is the emotional high, not a receipt
+- Honest progress bar: the open, the finish and the exit are excluded from it
 
 IMAGES
 Sourced via the browser engine Google Images pass (google-pass.mjs), 4 passes, every

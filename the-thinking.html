@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The School of Light — The Thinking</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  @page { size: A4; margin: 20mm 18mm 18mm; }
+  :root {
+    --sky:#4FA4D2; --sky-deep:#2C6F9E; --sky-soft:#E0F0FA;
+    --sun:#FFCE3D; --sun-deep:#D89A0F; --sun-soft:#FFF3D6;
+    --leaf:#1F8F5E; --ink:#1A2233; --ink-soft:#414F66; --ink-mute:#7A8898;
+    --rule:#E1E6EF; --dark:#16202F;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Inter',system-ui,sans-serif; color:var(--ink); line-height:1.62; font-size:10.6pt; }
+  h1,h2,h3 { font-family:'Poppins',system-ui,sans-serif; line-height:1.2; letter-spacing:-.015em; }
+  p { margin-bottom:9pt; color:var(--ink-soft); }
+  strong { color:var(--ink); font-weight:700; }
+
+  /* ── Cover ── */
+  .cover {
+    height:228mm; display:flex; flex-direction:column; justify-content:center;
+    page-break-after:always; position:relative; text-align:center;
+  }
+  .cover .sun {
+    width:70pt; height:70pt; border-radius:50%; margin:0 auto 26pt;
+    background:radial-gradient(circle at 35% 30%, #FFF3CC, var(--sun) 52%, var(--sun-deep));
+  }
+  .cover h1 { font-size:34pt; font-weight:800; margin-bottom:12pt; }
+  .cover .rule { width:54pt; height:3pt; background:var(--sun); margin:0 auto 18pt; border-radius:2pt; }
+  .cover .tag { font-size:13pt; color:var(--ink-soft); font-weight:500; max-width:118mm; margin:0 auto 34pt; line-height:1.55; }
+  .cover .place { font-size:8.6pt; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); font-weight:700; }
+  .cover .foot { position:absolute; bottom:0; left:0; right:0; font-size:8.4pt; color:var(--ink-mute); }
+
+  /* ── Sections ── */
+  section { page-break-before:always; }
+  .num {
+    display:inline-block; font-size:7.8pt; font-weight:800; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--sky-deep); background:var(--sky-soft); padding:4pt 9pt; border-radius:20pt; margin-bottom:11pt;
+  }
+  h2 { font-size:20pt; font-weight:800; margin-bottom:12pt; }
+  h3 { font-size:11.6pt; font-weight:700; margin:16pt 0 6pt; }
+  .lede { font-size:12pt; color:var(--ink); font-weight:500; margin-bottom:14pt; line-height:1.5; }
+
+  .pull {
+    border-left:3pt solid var(--sun); background:var(--sun-soft);
+    padding:12pt 14pt; margin:14pt 0; border-radius:0 6pt 6pt 0;
+  }
+  .pull p { margin:0; color:var(--ink); font-family:'Poppins',sans-serif; font-weight:600; font-size:11.4pt; line-height:1.45; }
+
+  ul { list-style:none; margin:10pt 0 12pt; }
+  li { position:relative; padding-left:16pt; margin-bottom:7pt; color:var(--ink-soft); }
+  li::before { content:'✦'; position:absolute; left:0; top:0; color:var(--sun-deep); font-size:8pt; }
+  ul.plain li::before { content:'–'; color:var(--ink-mute); }
+  ul.tick li::before { content:'✓'; color:var(--leaf); font-weight:800; }
+
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:12pt; margin:12pt 0; }
+  .box { border:1pt solid var(--rule); border-radius:7pt; padding:12pt 13pt; page-break-inside:avoid; }
+  .box.now { border-left:3pt solid var(--leaf); }
+  .box.soon { border-left:3pt solid var(--sun-deep); }
+  .box h3 { margin-top:0; font-size:11pt; }
+  .box p { font-size:9.8pt; margin-bottom:5pt; }
+  .box .tag { font-size:7.4pt; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); display:block; margin-bottom:5pt; }
+
+  .close { background:var(--dark); color:#fff; border-radius:9pt; padding:18pt 20pt; margin-top:16pt; page-break-inside:avoid; }
+  .close h3 { color:#fff; margin-top:0; }
+  .close p { color:rgba(255,255,255,.8); }
+  .close a { color:var(--sun); text-decoration:none; font-weight:700; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="sun"></div>
+  <h1>The School of Light</h1>
+  <div class="rule"></div>
+  <p class="tag">Why this exists, what we are building, and what we believe. The longer version, for families
+    who want to know exactly what they would be walking into.</p>
+  <div class="place">North Coast · Northern Ireland</div>
+  <div class="foot">From the people behind Days Out NI and the Conscious Parenting NI app</div>
+</div>
+
+<section>
+  <span class="num">One</span>
+  <h2>Why this exists</h2>
+  <p class="lede">Almost every parent we speak to is living two lives that will not fit together: the one where
+    they provide, and the one where they are actually present.</p>
+  <p>You go to work. Somebody else has your child for the best hours of the day — the hours when they are
+    rested, curious and at their most themselves. You get the tired end of them, plus weekends, and eleven years
+    later it is done.</p>
+  <p>Nobody chose that. It is simply the shape that was available. The school day was built around a working day
+    that mostly no longer exists, and the two have quietly drifted apart while everyone kept turning up.</p>
+  <p>What changed is that a very large number of parents now work from a laptop. The office is wherever they
+    open it. Once that is true, the old trade stops making sense. If you can work anywhere, why would you spend
+    those hours a long drive away from your child?</p>
+  <div class="pull">
+    <p>Providing for them and being present for them should not be two separate lives. That is the actual
+      problem we are solving. Everything else here follows from it.</p>
+  </div>
+  <p>The obvious alternative is home education, and plenty of families do it well. But the picture most people
+    have of it stops them: one child at a kitchen table with nobody their own age, and one parent trying to be
+    teacher, cook and entertainment for eleven hours a day. That picture is not entirely unfair, and it is
+    exactly the part we are built to fix.</p>
+  <p>So we are not asking anybody to choose between being there and doing it properly. We are building the third
+    thing — the group, the places, the equipment and the other families that make being there workable.</p>
+</section>
+
+<section>
+  <span class="num">Two</span>
+  <h2>What we actually are</h2>
+  <p class="lede">One group of families, in two parts. Most people start with the first and never necessarily
+    need the second.</p>
+  <div class="two">
+    <div class="box now">
+      <span class="tag">Running now</span>
+      <h3>The Days Out</h3>
+      <p>Regular days out together for families raising their children the same way. A morning in a park none of
+        you have been to. A coach hired between us to the zoo. Rock pools, forests, farms, workshops.</p>
+      <p>Weekly, rather than the once a month most groups manage — because friendship needs repetition, for the
+        adults as much as the children.</p>
+      <p>Easy to join, small cost, nothing long to sign. It fits around school, so weekends and holidays count.</p>
+    </div>
+    <div class="box soon">
+      <span class="tag">In preparation</span>
+      <h3>The Facility</h3>
+      <p>A permanent place on the North Coast. A barn set up as an indoor park, a garden, a quiet house, rooms
+        for real work, and a proper work zone for parents.</p>
+      <p>Open 8am to 8pm, seven days a week. You come and go inside that, however your week actually runs.</p>
+      <p>A small number of families, a serious monthly commitment, and a much closer fit required. Places go to
+        families we already know from the days out.</p>
+    </div>
+  </div>
+  <p>The days out are not a marketing funnel for the facility. They are the thing itself, and for a lot of
+    families they will always be enough — particularly for those whose children are happy in school and who
+    simply want better weekends and better friends. The facility is for the families who want this to be the
+    main shape of their week.</p>
+  <h3>Who it is for</h3>
+  <p>Children three to eight, with their brothers and sisters. In school, home-educated, or somewhere in
+    between — all three are welcome, and the mix is deliberate rather than tolerated. The parent comes too.
+    That part does not vary.</p>
+</section>
+
+<section>
+  <span class="num">Three</span>
+  <h2>What we believe</h2>
+  <p class="lede">Five things. Everything else here is a consequence of one of them.</p>
+
+  <h3>1. The family is the centre. Everything else is supplemental — including us.</h3>
+  <p>A child learns more from the adults who love them than from anybody who is paid to be with them. That is
+    not a complaint about teachers; it is simply where the weight sits. Most of the way we arrange childhood
+    ignores it. We are trying to arrange things the other way round: the family at the middle, and every
+    institution — this one included — arranged around it as support rather than as replacement.</p>
+
+  <h3>2. Providing and being present should not be two separate lives.</h3>
+  <p>Work is not the enemy of parenting. Distance is. A parent who works three metres from their child, with
+    gaps in the day where they look up and are found, is having a completely different life from one who works
+    thirty miles away and gets an hour at bedtime. We build for the first.</p>
+
+  <h3>3. Children learn by doing difficult things near people who like them.</h3>
+  <p>Not by being tested. A child who climbs the high frame, leads the game, speaks up, or gets the thing to
+    finally work has learned something a worksheet cannot deliver. Confidence is not praise for existing — it is
+    the residue of having done hard things in front of others and survived it.</p>
+
+  <h3>4. Asking for help is a skill, not a weakness.</h3>
+  <p>In most classrooms it is called cheating. No adult is ever asked to solve a real problem alone with no help
+    and no resources, so we stop pretending childhood should work that way. Children here ask each other, ask an
+    adult, ask an AI. What is assessed, informally, is whether the thing worked in the end.</p>
+
+  <h3>5. We are open to the best way.</h3>
+  <p>We are not a method and we are not named after a founder. Montessori got practical work and real tools
+    right. Waldorf got rhythm, materials and beauty right. Forest school got the outdoors right. The classical
+    tradition got character right. We take what holds up and leave the rest, and every practice has to survive
+    the question: why are we actually doing this?</p>
+  <div class="pull">
+    <p>We would rather be right in five years than consistent for a hundred.</p>
+  </div>
+</section>
+
+<section>
+  <span class="num">Four</span>
+  <h2>How the learning works</h2>
+  <p class="lede">A child starting now will spend their entire working life beside machines that recall
+    everything instantly. Being a slower version of that is not a skill.</p>
+  <p>So the weight goes on the things that hold their value: figuring it out, getting on with people, and
+    finishing what you started.</p>
+
+  <h3>Tasks, not tests</h3>
+  <p>"Build a remote control car. Now make it get all the way round a loop." Nobody hands over the method. They
+    try it, it fails, they change something, it works. That feeling is the lesson — the car is only the excuse
+    for producing it. Given a goal and no instructions, most children freeze at first. Within a few weeks they
+    stop freezing. That switch, from "tell me what to do" to "I will find a way", is the single most useful
+    thing we can hand them.</p>
+
+  <h3>Screens that do not agitate</h3>
+  <p>Reading and number work happen on e-ink tablets — paper-like, no backlight, no glow — for a couple of hours
+    a day at most. Films and educational material go on a projector, watched together in a quiet room. What you
+    will not find is a bank of glowing tablets keeping children occupied.</p>
+
+  <h3>A plan built around these children</h3>
+  <p>We use AI tools to build and rebuild the programme around the children actually in the room: where each one
+    is, what they want next, what they need next. Not a national plan written for an average child who does not
+    exist.</p>
+
+  <h3>Will they fall behind?</h3>
+  <p>Behind what, is the honest question back. If your child is in school, none of this changes their schooling
+    — it adds friends and better weekends. And for families going further: countries that begin formal schooling
+    at six or seven do not produce children who read worse at eleven. Under seven, play, movement, language and
+    a secure attachment to an adult appear to do more for later ability than early formal instruction does.</p>
+</section>
+
+<section>
+  <span class="num">Five</span>
+  <h2>The way we are with each other</h2>
+  <p class="lede">This is the part that decides whether the whole thing works. Not the equipment, not the
+    building — the tone in the room.</p>
+  <p>A group like this survives on the quality of the adults in it. Not their qualifications: their manners,
+    their curiosity, and their willingness to be part of something rather than a customer of it.</p>
+
+  <h3>What everybody brings</h3>
+  <ul class="tick">
+    <li>Good energy, and a hand with whatever needs doing</li>
+    <li>Curiosity — happy to hear an idea you have not heard before, and to offer one back</li>
+    <li>Kindness towards every child there, not only your own</li>
+    <li>Food you would be glad for any of the children to see you eating</li>
+    <li>Conversation. Parents here are interesting, and that is not an accident</li>
+    <li>Your own mess, taken home with you</li>
+  </ul>
+
+  <h3>What we leave at home</h3>
+  <ul class="plain">
+    <li>Smoking or vaping anywhere near the children</li>
+    <li>Fizzy drinks, sweets, and the beige-and-orange end of the menu</li>
+    <li>Talking down to children — ours or anybody else's</li>
+    <li>Turning up to be entertained, and waiting for somebody else to run the day</li>
+    <li>Negativity brought in and set down in the middle of everybody else's afternoon</li>
+  </ul>
+
+  <div class="pull">
+    <p>This is not a purity test. Nobody here has it worked out and nobody is keeping score. We are all just
+      trying to be a bit better than we were last year.</p>
+  </div>
+  <p>The reason any of it matters is that at three to eight, children copy what they see far more than what they
+    are told. Our own example is the curriculum, whether we intend it to be or not. So the standard is about
+    what we model, never about auditing each other.</p>
+
+  <h3>And you are allowed to work</h3>
+  <p>Nobody expects you to be on top of your children every minute. That is the opposite of the point. Your
+    children will be busy with other children; you can sit at the edge of the play zone with a laptop and get an
+    hour done, then look up and be found. Presence is not the same as constant supervision, and pretending
+    otherwise is what makes people exhausted.</p>
+</section>
+
+<section>
+  <span class="num">Six</span>
+  <h2>What the facility will be</h2>
+  <p class="lede">Four spaces, each doing one job properly, and a child moving between them as their day
+    requires — loud to quiet, group to alone, inside to outside and back.</p>
+
+  <h3>The barn</h3>
+  <p>High ceilings, soft floors, and the kind of climbing, swinging and sliding you would drive an hour to
+    find — indoors, so the weather stops deciding. Under seven, a child learns through their body before
+    anything else, so the body comes first and it comes first for as long as they need it.</p>
+
+  <h3>The garden</h3>
+  <p>Beds to dig, ground to run on, weather to be in. Hours outside on any day that allows it, rather than
+    fifteen supervised minutes at a fixed time.</p>
+
+  <h3>The quiet house</h3>
+  <p>Beanbags, low light, books, and a projector for something worth watching together. For the child who has
+    had enough noise, and for the afternoon when everybody has.</p>
+
+  <h3>The work rooms — and the work zone</h3>
+  <p>Big tables for building together, small desks for the child who wants an hour alone, and real tools rather
+    than toy versions of real tools. Next to it, a quiet work zone for parents: good light, proper internet,
+    good coffee, and twenty steps between you and your child.</p>
+
+  <h3>One table</h3>
+  <p>Everybody eats together, and the food is real. Highly processed food, artificial colours, sweeteners and
+    additives are kept out — not discouraged, kept out. Partly because of what they do to a young body, mostly
+    because of what they do to a room of young children twenty minutes later, and to the child who then gets
+    told off for something the food did. Children help make the lunch. A child who has chopped a carrot has a
+    different relationship with the carrot.</p>
+
+  <h3>The hours</h3>
+  <p>8am to 8pm, seven days a week. Come for three hours or eleven. Three long days and four days at home. Two
+    mornings a week. Weekends only, if your children are in school. The flexibility is not a perk — it is the
+    reason the place is worth building.</p>
+</section>
+
+<section>
+  <span class="num">Seven</span>
+  <h2>What it is not</h2>
+  <ul class="plain">
+    <li><strong>It is not a registered school.</strong> Children who attend the facility full-time are
+      home-educated, and the legal responsibility for their education stays with their parents. We provide the
+      place, the group, the equipment and the programme. We will walk any family through what electing home
+      education actually involves — for most it is far less complicated than they expect.</li>
+    <li><strong>It is not childcare.</strong> We do not take children off their parents' hands. You are in the
+      building and you remain responsible for your own child, exactly as you would be at a park or a soft play.
+      You may hand that to another adult you personally trust, and that arrangement is yours to make. This is
+      not a technicality — it is the entire design.</li>
+    <li><strong>It is not a religion, and it is not a method.</strong> Families of any faith or none are
+      welcome, and no child here is taught that one worldview is settled fact.</li>
+    <li><strong>It is not a perfect place run by perfect people.</strong> It is a group of families trying to do
+      something better than the default, and improving it as we go.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="num">Eight</span>
+  <h2>How you go further</h2>
+  <p class="lede">You have applied for a day out. That is the right first step and, for a lot of families, it is
+    the whole thing.</p>
+  <p>Come along. Meet everybody. Watch your children in the middle of it. Do it a few times and see whether
+    these are your people — because that is a question nobody can answer from a website.</p>
+  <p>If, after a while, you want this to be the main shape of your week rather than the best part of your
+    weekend, that is a separate and much longer conversation. Applying for a place at the facility is its own
+    process, and it happens with families we already know. There is no way to shortcut it and no advantage in
+    trying, because the whole thing depends on the group being right.</p>
+  <div class="pull">
+    <p>We are not opening on a date. We open when the right families are together — which is not a marketing
+      line, it is the actual condition.</p>
+  </div>
+  <div class="close">
+    <h3>In the meantime</h3>
+    <p><strong style="color:#fff">Days Out NI</strong> — our free guide to everywhere worth going with children
+      in Northern Ireland. <a href="https://daysoutni.com">daysoutni.com</a></p>
+    <p><strong style="color:#fff">Conscious Parenting NI</strong> — the free app with the thinking behind all of
+      this. <a href="https://new-beginnings.vercel.app">new-beginnings.vercel.app</a></p>
+    <p style="margin-top:10pt">Questions, at any point: <a href="mailto:school@aeonreon.com">school@aeonreon.com</a></p>
+  </div>
+</section>
+
+</body>
+</html>

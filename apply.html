@@ -190,6 +190,42 @@
       .field-row { grid-template-columns: 1fr 1fr; gap: 16px; }
       .link-row { grid-template-columns: 1fr 1fr; }
     }
+  
+    /* ─── Culture screen ─── */
+    .culture { display: grid; gap: 16px; margin-bottom: 22px; }
+    .culture-box {
+      background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+      padding: 19px 19px; box-shadow: var(--shadow-sm);
+    }
+    .culture-box.bring { border-left: 5px solid var(--leaf); }
+    .culture-box.leave { border-left: 5px solid var(--sun-deep); }
+    .culture-box h3 { font-size: 1.02rem; margin-bottom: 13px; }
+    .culture-box ul { list-style: none; display: grid; gap: 10px; }
+    .culture-box li { position: relative; padding-left: 27px; color: var(--ink-soft); font-size: .97rem; line-height: 1.5; }
+    .culture-box.bring li::before { content: '✓'; position: absolute; left: 0; top: 0; color: var(--leaf); font-weight: 800; }
+    .culture-box.leave li::before { content: '–'; position: absolute; left: 2px; top: -1px; color: var(--sun-deep); font-weight: 800; font-size: 1.15rem; }
+    .reassure { background: var(--sky-soft); border-radius: 14px; padding: 18px 20px; margin-bottom: 24px; }
+    .reassure p { font-size: .97rem; color: var(--ink-soft); }
+    .reassure p + p { margin-top: 11px; }
+    .reassure strong { color: var(--ink); }
+
+    /* ─── The download on the finish screen ─── */
+    .download {
+      display: flex; gap: 16px; align-items: center;
+      background: var(--dark); color: var(--dark-text); border-radius: 16px;
+      padding: 20px; margin: 22px 0; box-shadow: var(--shadow-md);
+    }
+    .download .doc {
+      width: 46px; height: 58px; border-radius: 5px; flex: none;
+      background: linear-gradient(160deg, #fff 0%, #E8EEF6 100%);
+      position: relative; box-shadow: 0 4px 14px rgba(0,0,0,.35);
+    }
+    .download .doc::after {
+      content: '✦'; position: absolute; inset: 0; display: flex; align-items: center;
+      justify-content: center; color: var(--sun-deep); font-size: 1.4rem;
+    }
+    .download .txt strong { display: block; font-family: var(--serif); font-weight: 700; font-size: 1.04rem; margin-bottom: 3px; }
+    .download .txt span { font-size: .89rem; color: rgba(246,248,251,.72); }
   </style>
 </head>
 <body>
@@ -206,26 +242,26 @@
 <main>
 <div class="stage">
 
-  <!-- ══ 0 · The open. Sets tone, gives permission to leave, first small yes. ══ -->
+  <!-- ══ 0 · The open. This is a day out, not an interview. Say so. ══ -->
   <section class="step active" data-step="0" data-noprogress>
-    <span class="kicker sun">Applications open</span>
-    <h2>Before you fill anything in.</h2>
-    <p class="sub">This is a small group, and the whole thing depends on the families in it wanting the same
-      things. So we read every application ourselves — properly, a person, start to finish.</p>
-    <p class="sub">There are a few real questions in here as well as the usual details. They take about three
-      minutes and most people say they enjoyed them, because they are the questions you rarely get asked out loud.</p>
-    <p class="sub">If at any point this does not sound like you, close the tab. It is better for both of us that
-      you find that out now.</p>
-    <button class="btn" data-next>I would like to be considered</button>
+    <span class="kicker sun">Come to a day out</span>
+    <h2>This is the easy bit.</h2>
+    <p class="sub">You are asking for an invitation to a day out. That is all this is — a few families, somewhere
+      good, a few hours. There is nothing to sign and nothing to pay to find out whether you like us.</p>
+    <p class="sub">If you have never met a group like this before, the first day is the awkward one. Everybody
+      knows that. Somebody will come and find you, introduce you around, and it stops being awkward in about ten
+      minutes. Your children will beat you to it.</p>
+    <p class="sub">Six quick questions. Under two minutes.</p>
+    <button class="btn" data-next>Let's go</button>
     <a class="btn-quiet" href="index.html">Take me back to read more first</a>
   </section>
 
-  <!-- ══ 1 · Easiest possible question. About their child, not about them. ══ -->
+  <!-- ══ 1 · Easiest question in the world, and it is about their child ══ -->
   <section class="step" data-step="1">
     <span class="kicker">Question 1</span>
     <h2>How old are your children?</h2>
-    <p class="sub">Tap all that apply. We are built around three to eight, but bring the brothers and sisters —
-      we would far rather you all came.</p>
+    <p class="sub">Tap all that apply. We are built around three to eight — but bring the brothers and sisters,
+      we would far rather you all came than you stayed home over a birthday.</p>
     <div class="chips" id="ageChips" data-multi>
       <button class="chip" data-value="Under 3">Under 3</button>
       <button class="chip" data-value="3">3</button>
@@ -240,99 +276,89 @@
     <button class="btn" data-next disabled id="agesNext">Continue</button>
   </section>
 
-  <!-- ══ 2 · The mirror. Every answer is valid — this teaches them the group is broad. ══ -->
+  <!-- ══ 2 · Fun, low stakes, and it makes them picture the day ══ -->
   <section class="step" data-step="2">
     <span class="kicker">Question 2</span>
-    <h2>Where are you at with school?</h2>
-    <p class="sub">All of these are welcome here, and the mix is deliberate. There is no wrong answer on this page.</p>
-    <div class="options" data-single data-key="Where they are at">
-      <button class="opt"><span class="tick"></span>They are in school, and I want more for their weekends</button>
-      <button class="opt"><span class="tick"></span>We home-educate, and I want them around other children</button>
-      <button class="opt"><span class="tick"></span>Somewhere in between — flexi, part-time, or it varies</button>
-      <button class="opt"><span class="tick"></span>Mine are not school age yet and I am deciding now</button>
+    <h2>What sort of day would you actually enjoy?</h2>
+    <p class="sub">Tap as many as you like. It genuinely shapes where we go next — we plan the days around what
+      the families on the list want.</p>
+    <div class="chips" id="dayTypeChips" data-multi>
+      <button class="chip" data-value="A park we have never been to">A new park</button>
+      <button class="chip" data-value="Beach and rock pools">Beach and rock pools</button>
+      <button class="chip" data-value="Forest and river">Forest and river</button>
+      <button class="chip" data-value="Farm and animals">Farm and animals</button>
+      <button class="chip" data-value="A bus somewhere further">A bus somewhere further</button>
+      <button class="chip" data-value="Making and building">Making and building</button>
+      <button class="chip" data-value="Music and drums">Music and drums</button>
+      <button class="chip" data-value="Cooking together">Cooking together</button>
+      <button class="chip" data-value="Somewhere indoors when it pours">Somewhere indoors</button>
     </div>
+    <button class="btn" data-next disabled id="dayTypeNext">Continue</button>
   </section>
 
-  <!-- ══ 3 · Culture transmission. They read a principle, then endorse it in their own words. ══ -->
+  <!-- ══ 3 · The culture. Benefits first, the few hard lines second, reassurance last. ══ -->
   <section class="step" data-step="3">
-    <span class="kicker sun">How we do it</span>
-    <h2>This is the part that makes us different.</h2>
-    <div class="panel">
-      <p><strong>We give children a goal and no method.</strong></p>
-      <p>"Build a remote control car. Now make it get all the way round a loop." Nobody hands them the
-        instructions. They try it, it fails, they change something, it works.</p>
-      <p>They can ask each other, ask an adult, ask an AI. In most classrooms that is called cheating. Here it is
-        called working — because no adult is ever asked to solve a real problem alone with no help.</p>
+    <span class="kicker sun">Worth knowing before you come</span>
+    <h2>How our days tend to feel.</h2>
+    <p class="sub">Friendly, easy, and slightly chaotic in the good way. Nobody performs, nobody is assessed, and
+      the adults get to have a proper conversation for once — which for most of us is the bit we did not know we
+      were missing.</p>
+
+    <div class="culture">
+      <div class="culture-box bring">
+        <h3>What everybody brings</h3>
+        <ul>
+          <li>Good energy, and a hand with whatever needs doing</li>
+          <li>Curiosity — happy to hear an idea you have not heard before, and to offer one back</li>
+          <li>Kindness towards every child there, not only your own</li>
+          <li>Food you would be glad for any of the children to see you eating</li>
+          <li>Your own mess, taken home with you</li>
+        </ul>
+      </div>
+      <div class="culture-box leave">
+        <h3>What we leave at home</h3>
+        <ul>
+          <li>Smoking or vaping anywhere near the children</li>
+          <li>Fizzy drinks, sweets, and the beige-and-orange end of the menu</li>
+          <li>Talking down to children — ours or anybody else's</li>
+          <li>Turning up to be entertained and waiting for somebody else to run the day</li>
+        </ul>
+      </div>
     </div>
-    <p class="sub">How does that land with you?</p>
-    <div class="options" data-single data-key="On tasks not tests">
-      <button class="opt"><span class="tick"></span>That is exactly what I want for them</button>
-      <button class="opt"><span class="tick"></span>I like it, and I have questions</button>
-      <button class="opt"><span class="tick"></span>I am not sure about that yet</button>
+
+    <div class="reassure">
+      <p><strong>This is not a purity test.</strong> Nobody here has it worked out and nobody is keeping score.
+        We are all just trying to be a bit better than we were last year.</p>
+      <p>The reason it matters at all is that at this age children copy what they see far more than what they are
+        told. So the standard is about our own example, never about judging each other's.</p>
+      <p><strong>And bring your laptop if you need to.</strong> If a work call lands halfway through, take it —
+        your children will be busy. The whole point of this is that providing for them and being with them stop
+        having to be two separate lives.</p>
+    </div>
+
+    <div class="options" data-single data-key="On how the days feel">
+      <button class="opt"><span class="tick"></span>That sounds like my kind of day</button>
+      <button class="opt"><span class="tick"></span>Sounds good — I have a question or two</button>
     </div>
   </section>
 
-  <!-- ══ 4 · The real filter. One answer opens the exit. ══ -->
+  <!-- ══ 4 · One light open question. Not gated — this is the friendly application. ══ -->
   <section class="step" data-step="4">
-    <span class="kicker sun">The one thing we cannot bend on</span>
-    <h2>Here, you stay.</h2>
-    <div class="panel">
-      <p><strong>We do not take your child off your hands.</strong></p>
-      <p>You are in the building. Working in the parent work zone, watching, or joining in — whichever suits the
-        day. Your child can find you in twenty steps whenever they want you.</p>
-      <p>And you stay responsible for them, exactly as you would be at a park or a soft play. That is not a
-        technicality, it is the entire design. It is the reason this place exists.</p>
-    </div>
-    <p class="sub">Is that what you are looking for?</p>
-    <div class="options" data-single data-key="On staying">
-      <button class="opt"><span class="tick"></span>That is the whole reason I am here</button>
-      <button class="opt"><span class="tick"></span>I like it, though I would need to work out the practicalities</button>
-      <button class="opt" data-exit><span class="tick"></span>Honestly, what I need is childcare</button>
-    </div>
-  </section>
-
-  <!-- ══ 5 · The emotional core. They articulate their own hopes in their own words. ══ -->
-  <section class="step" data-step="5">
-    <span class="kicker">The question we care most about</span>
-    <h2>What do you want your child to be like at eighteen?</h2>
-    <p class="sub">Not their job. Not their grades. The person. Two or three sentences is plenty — and there is
-      genuinely no right answer, because we are reading for fit rather than for polish.</p>
-    <div class="field">
-      <textarea id="q-hopes" placeholder="However you would put it, in your own words."></textarea>
-      <div class="counter" id="hopesCount">0 words</div>
-    </div>
-    <button class="btn" data-next disabled id="hopesNext">Continue</button>
-  </section>
-
-  <!-- ══ 6 · Flips them from customer to member. ══ -->
-  <section class="step" data-step="6">
     <span class="kicker">Question 4</span>
-    <h2>What could you bring to the group?</h2>
-    <p class="sub">Everybody brings something, and most of it is not impressive on paper. Tap anything that fits,
-      then add a line if you like.</p>
-    <div class="chips" id="bringChips" data-multi style="margin-bottom:20px">
-      <button class="chip" data-value="A trade or a skill">A trade or a skill</button>
-      <button class="chip" data-value="Music">Music</button>
-      <button class="chip" data-value="Art or making">Art or making</button>
-      <button class="chip" data-value="Cooking">Cooking</button>
-      <button class="chip" data-value="Outdoors and nature">Outdoors and nature</button>
-      <button class="chip" data-value="Sport or movement">Sport or movement</button>
-      <button class="chip" data-value="Organising things">Organising things</button>
-      <button class="chip" data-value="A calm presence">A calm presence</button>
-      <button class="chip" data-value="Just a pair of hands">Just a pair of hands</button>
-    </div>
+    <h2>What made you look at this?</h2>
+    <p class="sub">A sentence is plenty, and there is no right answer — we just like knowing who we are talking
+      to before we meet you. Skip it if you would rather.</p>
     <div class="field">
-      <textarea id="q-bring" placeholder="Anything you would want us to know (optional)." style="min-height:110px"></textarea>
+      <textarea id="q-why" placeholder="However you would put it." style="min-height:130px"></textarea>
     </div>
     <button class="btn" data-next>Continue</button>
   </section>
 
-  <!-- ══ 7 · Details last, when they are already invested. ══ -->
-  <section class="step" data-step="7">
-    <span class="kicker">Nearly done</span>
+  <!-- ══ 5 · Details last, once they have pictured the day ══ -->
+  <section class="step" data-step="5">
+    <span class="kicker">Last one</span>
     <h2>Where do we send the invitation?</h2>
-    <p class="sub">Days out get arranged by area, so your town genuinely matters — it affects where we go and,
-      eventually, where the permanent place lands.</p>
+    <p class="sub">Days get arranged by area, so your town genuinely matters — it decides where we go next.</p>
     <div class="field-row">
       <div class="field">
         <label for="f-name">Your name</label>
@@ -361,42 +387,44 @@
         <button class="chip" data-value="Saturdays">Saturdays</button>
         <button class="chip" data-value="Sundays">Sundays</button>
         <button class="chip" data-value="School holidays">School holidays</button>
-        <button class="chip" data-value="Evenings">Evenings</button>
       </div>
     </div>
     <input type="checkbox" id="botcheck" class="hp" tabindex="-1" autocomplete="off" />
-    <button class="btn" id="submitBtn" disabled>Send My Application</button>
+    <button class="btn" id="submitBtn" disabled>Ask for an Invitation</button>
     <p class="note">We only email you about The School of Light. No list, no forwarding, no noise.</p>
   </section>
 
-  <!-- ══ 8 · Peak-end. Their own words played back, then what happens next, then something to keep. ══ -->
-  <section class="step" data-step="8" data-noprogress>
+  <!-- ══ 6 · Peak-end. They leave holding something. ══ -->
+  <section class="step" data-step="6" data-noprogress>
     <div class="big-tick">✓</div>
-    <h2>That is with us now.</h2>
-    <p class="sub">A person reads every one of these, so give us a few days rather than a few minutes.</p>
+    <h2>That is with us.</h2>
+    <p class="sub">A person reads every one of these, so give us a few days rather than a few minutes. When the
+      next day out is arranged for your area, you will hear from us with the date and the place.</p>
 
-    <div class="echo" id="echoBox" hidden>
-      <div class="label">You told us you want them to be</div>
-      <div class="words" id="echoWords"></div>
-    </div>
-    <p class="sub" id="echoTail" hidden>That is the thing we are building. It is the only reason any of this exists.</p>
+    <a class="download" href="the-school-of-light.pdf" download>
+      <span class="doc" aria-hidden="true"></span>
+      <span class="txt">
+        <strong>The Thinking — download the whole story</strong>
+        <span>Why this exists, what the permanent place will be, and what we believe. Nine pages, yours to keep.</span>
+      </span>
+    </a>
 
     <div class="next-steps">
       <h3>What happens now</h3>
       <ol>
-        <li>We read your application properly — usually within a week.</li>
-        <li>If it looks like a fit, you get an invitation to the next day out.</li>
-        <li>You come along, meet everybody, and watch your child in the middle of it.</li>
-        <li>You decide. Nothing is signed before any of that.</li>
+        <li>We read what you sent — usually within a week.</li>
+        <li>You get an invitation to the next day out near you.</li>
+        <li>You come along, meet everybody, and see how your children take to it.</li>
+        <li>If you love it, you keep coming. That is the whole commitment.</li>
       </ol>
     </div>
 
-    <h3 style="margin-top:26px">While you wait, this is what we believe</h3>
+    <h3 style="margin-top:26px">And this is what we believe</h3>
     <ul class="creed">
       <li><strong>The family is the centre.</strong> Everything else is supplemental, including us.</li>
-      <li><strong>Children learn by doing difficult things in front of people who like them.</strong> Not by being tested.</li>
+      <li><strong>Providing and being present should not be two separate lives.</strong> That is the problem we are actually solving.</li>
+      <li><strong>Children learn by doing difficult things near people who like them.</strong> Not by being tested.</li>
       <li><strong>Asking for help is a skill, not a weakness.</strong> We teach it on purpose.</li>
-      <li><strong>A calm room beats a clever curriculum.</strong> Tone first, always.</li>
       <li><strong>We are open to the best way.</strong> No method owns us. What holds up, stays.</li>
     </ul>
 
@@ -417,31 +445,12 @@
     </div>
   </section>
 
-  <!-- ══ X · The kind exit. Being turned away honestly is what makes acceptance mean something. ══ -->
-  <section class="step" data-step="9" data-noprogress>
-    <span class="kicker sun">An honest answer deserves an honest one back</span>
-    <h2>Then we are the wrong place for you.</h2>
-    <p class="sub">And we would rather say that now than take your money and disappoint you in March.</p>
-    <p class="sub">Childcare is a real need and a completely reasonable one. It is just the single thing we cannot
-      provide — the parent staying is not a policy we could relax, it is the whole reason the place exists.</p>
-    <p class="sub">You are still one of ours though, so take these with you:</p>
-    <div class="link-row">
-      <a class="link-card" href="https://daysoutni.com" target="_blank" rel="noopener">
-        <strong>Days Out NI →</strong><span>Free. The biggest guide to days out in Northern Ireland, and we built it.</span>
-      </a>
-      <a class="link-card" href="https://new-beginnings.vercel.app" target="_blank" rel="noopener">
-        <strong>Conscious Parenting NI →</strong><span>Free. The thinking behind everything on this site.</span>
-      </a>
-    </div>
-    <p class="note" style="margin-top:24px">If your situation changes, the door here stays open. Come back any time.</p>
-    <button class="btn-quiet" data-goto="4" style="margin-top:6px">Actually, let me change that answer</button>
-  </section>
-
 </div>
 </main>
 
 <footer>
   <p>The School of Light · North Coast, Northern Ireland</p>
+  <p style="margin-top:6px">Applying for a place at the permanent facility is a separate, longer conversation — it happens with families we already know from the days out.</p>
 </footer>
 
 <script>
@@ -452,15 +461,14 @@
   var ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
   var KEY_IS_LIVE = ACCESS_KEY.indexOf('YOUR_') !== 0;
 
-  var STORE = 'sol-application-v1';
+  var STORE = 'sol-dayout-application-v1';
   var steps = [].slice.call(document.querySelectorAll('.step'));
   var fill = document.getElementById('progressFill');
   var backBtn = document.getElementById('backBtn');
-  var history = [];
+  var trail = [];
   var current = 0;
 
-  // Progress counts only the real questions — the open, the finish and the exit
-  // are not "progress", so the bar never lies about how much is left.
+  // The open and the finish are not "progress", so the bar never overstates what is left.
   var counted = steps.filter(function (s) { return !s.hasAttribute('data-noprogress'); })
                      .map(function (s) { return +s.dataset.step; });
 
@@ -469,30 +477,22 @@
   function save() { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) {} }
 
   function show(n, remember) {
-    if (remember !== false && n !== current) history.push(current);
+    if (remember !== false && n !== current) trail.push(current);
     current = n;
     steps.forEach(function (s) { s.classList.toggle('active', +s.dataset.step === n); });
     var idx = counted.indexOf(n);
     if (idx > -1) fill.style.width = Math.round(((idx + 1) / counted.length) * 100) + '%';
-    else if (n >= 8) fill.style.width = '100%';
-    else fill.style.width = '0%';
-    backBtn.hidden = history.length === 0 || n >= 8;
+    else fill.style.width = n === 0 ? '0%' : '100%';
+    backBtn.hidden = trail.length === 0 || n === 6;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  backBtn.addEventListener('click', function () {
-    if (!history.length) return;
-    show(history.pop(), false);
-  });
-
+  backBtn.addEventListener('click', function () { if (trail.length) show(trail.pop(), false); });
   document.querySelectorAll('[data-next]').forEach(function (btn) {
     btn.addEventListener('click', function () { show(current + 1); });
   });
-  document.querySelectorAll('[data-goto]').forEach(function (btn) {
-    btn.addEventListener('click', function () { show(+btn.dataset.goto); });
-  });
 
-  // ─── Single-choice options: tap, see it land, move on by itself ───
+  // ─── Single-choice: tap, see it land, move on by itself ───
   document.querySelectorAll('.options[data-single]').forEach(function (group) {
     var key = group.dataset.key;
     group.querySelectorAll('.opt').forEach(function (opt) {
@@ -501,17 +501,16 @@
         opt.classList.add('selected');
         state[key] = opt.textContent.trim();
         save();
-        var isExit = opt.hasAttribute('data-exit');
-        setTimeout(function () { show(isExit ? 9 : current + 1); }, 420);
+        setTimeout(function () { show(current + 1); }, 420);
       });
     });
   });
 
   // ─── Multi-choice chips ───
-  function wireChips(id, key, gateBtnId) {
+  function wireChips(id, key, gateId) {
     var wrap = document.getElementById(id);
     if (!wrap) return;
-    var gate = gateBtnId ? document.getElementById(gateBtnId) : null;
+    var gate = gateId ? document.getElementById(gateId) : null;
     function sync() {
       var picked = [].slice.call(wrap.querySelectorAll('.chip.selected'))
                      .map(function (c) { return c.dataset.value; });
@@ -525,23 +524,15 @@
     sync();
   }
 
-  // ─── The question that matters: gently gate it so it gets a real answer ───
-  var hopes = document.getElementById('q-hopes');
-  var hopesCount = document.getElementById('hopesCount');
-  var hopesNext = document.getElementById('hopesNext');
-  function words(s) { return s.trim() ? s.trim().split(/\s+/).length : 0; }
-  hopes.addEventListener('input', function () {
-    var w = words(hopes.value);
-    hopesCount.textContent = w === 1 ? '1 word' : w + ' words';
-    hopesNext.disabled = w < 5;
-    state['At eighteen'] = hopes.value;
-    save();
-  });
+  var CHIP_GROUPS = [
+    ['ageChips', "Children's ages", 'agesNext'],
+    ['dayTypeChips', 'Days they would enjoy', 'dayTypeNext'],
+    ['dayChips', 'Days that work', null]
+  ];
 
-  var bring = document.getElementById('q-bring');
-  bring.addEventListener('input', function () { state['What they bring, in their words'] = bring.value; save(); });
+  var why = document.getElementById('q-why');
+  why.addEventListener('input', function () { state['What made them look'] = why.value; save(); });
 
-  // ─── Details ───
   var fields = { 'Parent name': 'f-name', 'Email': 'f-email', 'Phone': 'f-phone', 'Town': 'f-town' };
   var submitBtn = document.getElementById('submitBtn');
   function checkDetails() {
@@ -555,19 +546,11 @@
     el.addEventListener('input', function () { state[key] = el.value; save(); checkDetails(); });
   });
 
-  // ─── Restore anything they typed before wandering off ───
+  // ─── Restore a half-finished application, then wire up once ───
   Object.keys(fields).forEach(function (key) {
     if (state[key]) document.getElementById(fields[key]).value = state[key];
   });
-  if (state['At eighteen']) { hopes.value = state['At eighteen']; hopes.dispatchEvent(new Event('input')); }
-  if (state['What they bring, in their words']) bring.value = state['What they bring, in their words'];
-  var CHIP_GROUPS = [
-    ['ageChips', "Children's ages", 'agesNext'],
-    ['bringChips', 'What they could bring', null],
-    ['dayChips', 'Days that work', null]
-  ];
-  // Restore the ticks first, then wire up — wireChips syncs state and the gate on the way in,
-  // so binding once after the restore keeps the handlers single and the button honest.
+  if (state['What made them look']) why.value = state['What made them look'];
   CHIP_GROUPS.forEach(function (g) {
     var picked = (state[g[1]] || '').split(', ').filter(Boolean);
     document.querySelectorAll('#' + g[0] + ' .chip').forEach(function (c) {
@@ -575,8 +558,6 @@
     });
   });
   CHIP_GROUPS.forEach(function (g) { wireChips(g[0], g[1], g[2]); });
-
-  // Restore any single-choice answers too
   document.querySelectorAll('.options[data-single]').forEach(function (group) {
     var answer = state[group.dataset.key];
     if (!answer) return;
@@ -584,7 +565,6 @@
       if (o.textContent.trim() === answer) o.classList.add('selected');
     });
   });
-
   checkDetails();
 
   // ─── Send ───
@@ -593,7 +573,7 @@
     if (!KEY_IS_LIVE) {
       submitBtn.textContent = 'Email it to school@aeonreon.com';
       document.querySelector('#submitBtn + .note').textContent =
-        'The form is not connected yet — send your answers to school@aeonreon.com and we will read them the same way.';
+        'The form is not connected yet — send your name, town and your children’s ages to school@aeonreon.com and we will read it the same way.';
       return;
     }
     submitBtn.textContent = 'Sending…';
@@ -601,7 +581,7 @@
 
     var fd = new FormData();
     fd.append('access_key', ACCESS_KEY);
-    fd.append('subject', 'School of Light — application from ' + (state['Parent name'] || 'someone'));
+    fd.append('subject', 'School of Light — DAY OUT application from ' + (state['Parent name'] || 'someone'));
     fd.append('from_name', 'The School of Light');
     Object.keys(state).forEach(function (k) { if (state[k]) fd.append(k, state[k]); });
 
@@ -609,25 +589,13 @@
       method: 'POST', body: fd, headers: { 'Accept': 'application/json' }
     }).then(function (r) {
       if (!r.ok) throw new Error('bad response');
-      finish();
+      try { localStorage.removeItem(STORE); } catch (e) {}
+      show(6);
     }).catch(function () {
       submitBtn.textContent = 'Something went wrong — try again';
       submitBtn.disabled = false;
     });
   });
-
-  // ─── The last screen plays their own words back to them ───
-  function finish() {
-    var said = (state['At eighteen'] || '').trim();
-    if (said) {
-      if (said.length > 240) said = said.slice(0, 237).replace(/\s+\S*$/, '') + '…';
-      document.getElementById('echoWords').textContent = '“' + said + '”';
-      document.getElementById('echoBox').hidden = false;
-      document.getElementById('echoTail').hidden = false;
-    }
-    try { localStorage.removeItem(STORE); } catch (e) {}
-    show(8);
-  }
 
   show(0, false);
 })();
