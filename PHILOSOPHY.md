@@ -42,7 +42,7 @@ built the place where both happen at once. That is what we are building.
 
 ---
 
-## Part Two — The twelve principles
+## Part Two — The thirteen principles
 
 ### 1. Nobody has more at stake than you
 
@@ -94,18 +94,27 @@ So the environment is designed for steadiness first:
 Beauty is not decoration here. A beautiful, orderly, calm room teaches something a chaotic one
 cannot.
 
-### 5. Never alone with an adult who is not their family
+### 5. Many eyes
 
-A child at The School of Light is never alone with an adult who is not their own family.
-There are always multiple facilitators and multiple parents present.
+There are always several adults in the room — multiple facilitators and multiple parents,
+every day, as a matter of how the place is built rather than as a rule anybody has to
+remember.
 
-This is deliberate architecture rather than a policy line. People behave differently when other
-adults can see them — and a group that is always visible to itself keeps its own standards high
-without anybody having to police it. It protects the children, and it protects the adults from
-suspicion too.
+Part of it is simply practical: more adults means more attention, more help, and more people
+who know your child. Part of it is that all of us behave better when we are among others.
+People are more patient, more careful with their words and slower to snap when they are not
+on their own — that is true of every adult alive, and it is worth designing around rather
+than pretending otherwise.
 
-It is also why the parent staying is non-negotiable. The design only works if the room is full
-of people who love the children in it.
+So a room that is always visible to itself keeps its own standards without anybody having to
+police it. It is also why the parent staying is non-negotiable: the design only works if the
+room is full of people who love the children in it.
+
+> **For the book, not for the app or the site.** This principle deserves a fuller chapter —
+> how much of poor adult behaviour is a function of being unobserved, how quickly tempers
+> shorten in private, and why "many eyes" protects the adults as much as the children. Handled
+> at length it is reassuring. Handled in one line it makes people think about things they were
+> not thinking about, so keep it light everywhere except the long form.
 
 ### 6. Be the person you want them to become
 
@@ -142,11 +151,41 @@ This is not chores-as-discipline. It is the difference between a person who belo
 a person who is hosted there. If the room magically repairs itself every night, a child never
 learns what it costs to put things back in order — and never values it.
 
-Ownership scales outward: your space, then your family, then your town, then your country. A
-child who takes care of their own place becomes an adult who takes care of a community. That is
-how you get good citizens, and there is no shortcut to it.
+Ownership scales outward: your own space, then your family, then the group, then the town you
+live in. A child who takes care of their own place becomes an adult who takes care of the place
+around them. That is how you get people who are a real asset to their community, and there is no
+shortcut to it.
 
-### 8. Get out and live
+### 8. Value for value, at their level
+
+We want children who understand, early and in their bones, that you get by giving something
+worth having. Not as a lecture about economics — as something they have actually done.
+
+It starts as play. Shopkeepers, with real change and a real queue. Then it grows into things
+that are small but genuinely real:
+
+- Running a stall at one of our own days out
+- Organising a small event for the group — picking the place, working out what it needs, doing it
+- Helping with a fundraiser for the school and seeing the money arrive because of work they did
+- Taking a job around the building — the food room, the tidy-up, the animals — and being paid
+  for it in a way they can spend
+
+That last one is worth doing properly. A simple internal token system, earned for real work and
+spendable on real things, teaches value-for-value faster than any amount of explaining. The
+child who has cleaned up for an hour and then chosen what to spend it on has learned something
+permanent.
+
+And it does not have to stop at pretend. A six-year-old who can describe an idea out loud can
+build a working app with AI, the same way the adults around them do. If it is good, why would it
+not go out into the world for other people to use? The paperwork is an adult's job; the idea,
+the work and the reward are theirs.
+
+This is the same principle as "children are useful now", pointed outward. Usefulness inside the
+family becomes service to the group, and service to the group becomes a person who knows how to
+provide something their community actually wants. Waiting until twenty-five to begin learning
+that is a strange choice when they could begin at five.
+
+### 9. Get out and live
 
 The days out are not a warm-up for the real thing. They are a statement of how we think a life
 should be used.
@@ -158,7 +197,7 @@ little and somebody with a great deal can both live this way; it is a decision, 
 Children raised by people who live like that do not need to be told to be ambitious about life.
 They assume it.
 
-### 9. The good, the true and the beautiful
+### 10. The good, the true and the beautiful
 
 We hold that there is such a thing as beauty, and that it is not purely a matter of taste. That
 some ways of living lead to flourishing and others lead somewhere dark. And that finding out
@@ -172,7 +211,7 @@ not.
 The destination we are aiming at: strong families, peaceful and beautiful places to live, and
 people who are a genuine credit to the community around them.
 
-### 10. Joy is a design requirement
+### 11. Joy is a design requirement
 
 Higher-mindedness is supposed to be enjoyable. Not solemn, not grim, not endured.
 
@@ -189,7 +228,7 @@ few produce a child who is excellent and delighted at the same time.
 So we are always asking the same question about everything we do: how could this be more
 enjoyable without being less good?
 
-### 11. Take the best of every method
+### 12. Take the best of every method
 
 When the UFC began, nobody actually knew whether boxing beat wrestling, or karate beat jiu-jitsu.
 Everybody had a tradition and a lot of confidence. So they put them against each other and found
@@ -213,7 +252,7 @@ We are doing the mixed version deliberately:
 And then we adapt again, continuously, based on the actual children in front of us and how they
 respond. No method owns us. What holds up, stays.
 
-### 12. One direction
+### 13. One direction
 
 A magnet works because every particle inside it faces the same way. Scatter the alignment and it
 is just a lump of metal.
@@ -235,9 +274,10 @@ Built from first principles and observable reality, that alignment is a very pow
 | Provide and be present | Parent work zone. 8am–8pm, seven days. Come and go. |
 | Find what lights them up | Wide exposure, many days out, materials and tools everywhere, adults who watch and notice. |
 | A calm room | Natural materials, real food only, steady adults, beauty on purpose. |
-| Never alone | Multiple facilitators and parents, always. Visible rooms. |
+| Many eyes | Several facilitators and parents in the room, always. Open, visible spaces. |
 | Be the example | Culture code for adults. Emotional state treated as part of the offer. |
 | Children are useful now | Real jobs, real tools, children maintain their own space. |
+| Value for value | Shopkeepers, stalls, small events, fundraisers, an internal token system for real work. Ship what they build. |
 | Get out and live | The days out. Weekly, not monthly. |
 | Good, true, beautiful | First-principles filter on every practice. Objective standards named. |
 | Joy | Fun as a KPI. If it is boring long-term, change it. |
@@ -249,12 +289,24 @@ Built from first principles and observable reality, that alignment is a very pow
 ## Part Four — Still to develop
 
 - The facility application — a separate, longer, more serious process (deliberately not built yet)
-- What "teaching business" looks like concretely at 5, at 8, at 12
+- The token system: what earns tokens, what they buy, and how it stays honest rather than
+  becoming a sticker chart
+- Which of the children's builds actually get published, and who does the paperwork
 - The philosophy curriculum for children — which ideas, at which ages, in what form
 - How the AI academic layer is actually configured, and which apps
 - Money: the real numbers, the founding rate, the add-ons
 - Governance — how decisions get made once there are twenty families
 - The book: this document is the spine of it
+
+---
+
+## Reference points we are learning from
+
+- **Alpha School (US)** — young children running real small businesses with adult support for
+  the paperwork, and an internal token economy earned through real work and spent in their own
+  shop. Also the two-hours-of-AI-academics-then-life model. Worth studying properly; not worth
+  copying wholesale.
+- **The UFC** — the argument for testing methods against each other rather than defending them.
 
 ---
 
@@ -268,4 +320,5 @@ Built from first principles and observable reality, that alignment is a very pow
 - "If the room magically repairs itself every night, a child never learns what it costs to put
   things back in order."
 - "A magnet works because every particle inside it faces the same way."
+- "The paperwork is an adult's job. The idea, the work and the reward are theirs."
 - "We would rather be right in five years than consistent for a hundred."
