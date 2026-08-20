@@ -1,6 +1,7 @@
 # The School of Light — Core Philosophy
 
-**Status:** working document, v1 (2026-08-20). Expand as more emerges.
+**Status:** working document, v2 (2026-08-20). Raw material for the book, captured as it comes.
+Expand as more emerges; chapters get shaped later, not now.
 **Purpose:** the single source of truth for what we believe. Everything else copies from
 here — the app section, the website, The Thinking PDF, and eventually the book.
 
@@ -10,6 +11,11 @@ here — the app section, the website, The Thinking PDF, and eventually the book
 
 > Parents raising their own children, together, with the best of every method — and the
 > resources to actually do it.
+
+And the second line, which is really the same one:
+
+> It is not a programme for children. It is a way of life for a family, and the children are
+> in it with you.
 
 ---
 
@@ -42,7 +48,7 @@ built the place where both happen at once. That is what we are building.
 
 ---
 
-## Part Two — The fourteen principles
+## Part Two — The seventeen principles
 
 ### 1. Nobody has more at stake than you
 
@@ -151,7 +157,65 @@ to grow into.
 This is not a demand for perfection. It is a standing commitment to improve, in public, alongside
 other people doing the same.
 
-### 7. Children are useful now
+### 7. This is a family philosophy, not a children's programme
+
+Most people send a child off to be developed and never once ask the same question of themselves.
+The child is the project; the adult is finished. That is the assumption underneath almost every
+school gate in the country, and it is wrong.
+
+The development of the parents into the sort of people worth copying matters exactly as much as
+the development of the children. Probably more, because it is the thing the children are actually
+learning from.
+
+So this is a programme for the whole family, and the adult curriculum is real:
+
+- **How to hold a conversation that makes the other person smarter.** Not chit-chat, not filling the
+  air with words. Talking about things that are actually worth the time.
+- **How to manage your own emotional state**, so that the room gets your best rather than your
+  leftovers. NLP and that family of tools are genuinely useful here and worth learning properly.
+- **How to lift and inspire the people around you** — your children, but also your friends and
+  everybody else in the group.
+- **How to coach**, rather than instruct. It is a learnable skill and most parents have never been
+  taught it.
+- **How to keep making life more enjoyable.** Someone who habitually asks "how could this be more
+  fun?" changes every room they walk into.
+
+And the days out do more of this than anything else. A family that goes and does things together
+becomes a different family. Everybody in it gets sharper, better company and better at life — not
+just the children.
+
+### 8. Learn beside them, and let them teach you
+
+A specialist comes in to teach rhythm, or drawing, or knots. The parents should be in that circle
+too — not supervising it from the edge.
+
+Most parents will not, and the reason is almost always embarrassment. They do not want to be seen
+being bad at something in front of their own child. But being seen being bad at something in front
+of your own child is one of the most instructive things you will ever do for them. They watch how
+you handle being a beginner. They watch you get frustrated and carry on anyway. That is the lesson,
+and you cannot deliver it by explaining it.
+
+**And let the child teach you.** If they are at level two of drawing and you are at level one, they
+are the teacher. That is not a game to make them feel good — it is the fastest way to build real
+confidence, because confidence is not praise. Confidence is knowing you have a skill that is
+genuinely of value to somebody else. A child who has actually taught an adult something has felt
+that, and it does not wear off.
+
+So the roles flip constantly. You mentor them on one thing at four o'clock and they mentor you on
+another at five. Teacher becomes student and student becomes teacher, on different topics, in the
+same afternoon. That is not an unusual arrangement — it is what a functioning community has always
+looked like, and we have just stopped doing it.
+
+**And there is no age at which this closes.** You did not learn to draw at twelve and you are forty
+now: so learn it today. Piano, singing, rock climbing, a language, the times tables you have
+forgotten. Sit down with the same app your child is using and do it properly.
+
+Notice, too, that no self-respecting adult would ever agree to learn the way we ask children to.
+Adults watch a video, use an app, book a course with somebody who actually does the thing, and go
+to things because they are enjoyable. Then we send our children somewhere that does none of that
+and wonder why they resist. Do it the adult way, for everybody.
+
+### 9. Children are useful now
 
 A child is not an apprentice person waiting until twenty-five to begin participating. They have
 real value the moment they can do a real thing.
@@ -169,7 +233,7 @@ live in. A child who takes care of their own place becomes an adult who takes ca
 around them. That is how you get people who are a real asset to their community, and there is no
 shortcut to it.
 
-### 8. Value for value, at their level
+### 10. Value for value, at their level
 
 We want children who understand, early and in their bones, that you get by giving something
 worth having. Not as a lecture about economics — as something they have actually done.
@@ -198,7 +262,7 @@ family becomes service to the group, and service to the group becomes a person w
 provide something their community actually wants. Waiting until twenty-five to begin learning
 that is a strange choice when they could begin at five.
 
-### 9. Follow the body, not the clock
+### 11. Follow the body, not the clock
 
 If a child is hungry they eat. If they are tired they rest. If they need the bathroom they go. If
 their energy is high they climb, and when it drops they take themselves to the books or the costume
@@ -213,7 +277,28 @@ the few that genuinely lasts a lifetime. So we leave it in. Responsibly, and wit
 notice when a child is getting it wrong — but the default is that the child's own body is a better
 guide to the child's own day than a bell is.
 
-### 10. Get out and live
+### 12. One life, not compartments
+
+Look at how a normal week is arranged. School is the boring part, so fun is scheduled for
+afterwards. Work is the part you endure, so the evening is the reward. The children are at home all
+of Saturday, which is described as a struggle, and by Saturday night somebody badly needs a drink
+and a night away from all of it.
+
+Every one of those is a compartment, and every compartment carries the same message: this part of
+your life is something to get through so that a different part can begin.
+
+We are trying to build the opposite — one life you do not need to escape from.
+
+When you are with your children you are learning something useful, so the time is not a holding
+pattern. When they are deep in something with their friends you go and work for three hours, so
+your work is not being sacrificed. When they need you, you are twenty steps away, so nobody is
+being let down. When a specialist is in teaching something you cannot do, you join in, so the day
+improves you too.
+
+Nothing there is being endured. That is the whole test: if a large part of the week is something
+you are getting through, the week is designed wrong.
+
+### 13. Get out and live
 
 The days out are not a warm-up for the real thing. They are a statement of how we think a life
 should be used.
@@ -225,7 +310,7 @@ little and somebody with a great deal can both live this way; it is a decision, 
 Children raised by people who live like that do not need to be told to be ambitious about life.
 They assume it.
 
-### 11. The good, the true and the beautiful
+### 14. The good, the true and the beautiful
 
 We hold that there is such a thing as beauty, and that it is not purely a matter of taste. That
 some ways of living lead to flourishing and others lead somewhere dark. And that finding out
@@ -239,7 +324,7 @@ not.
 The destination we are aiming at: strong families, peaceful and beautiful places to live, and
 people who are a genuine credit to the community around them.
 
-### 12. Joy is a design requirement
+### 15. Joy is a design requirement
 
 Higher-mindedness is supposed to be enjoyable. Not solemn, not grim, not endured.
 
@@ -256,7 +341,7 @@ few produce a child who is excellent and delighted at the same time.
 So we are always asking the same question about everything we do: how could this be more
 enjoyable without being less good?
 
-### 13. Take the best of every method
+### 16. Take the best of every method
 
 When the UFC began, nobody actually knew whether boxing beat wrestling, or karate beat jiu-jitsu.
 Everybody had a tradition and a lot of confidence. So they put them against each other and found
@@ -280,7 +365,7 @@ We are doing the mixed version deliberately:
 And then we adapt again, continuously, based on the actual children in front of us and how they
 respond. No method owns us. What holds up, stays.
 
-### 14. One direction
+### 17. One direction
 
 A magnet works because every particle inside it faces the same way. Scatter the alignment and it
 is just a lump of metal.
@@ -304,8 +389,11 @@ Built from first principles and observable reality, that alignment is a very pow
 | A calm room | Natural materials, real food only, steady adults, beauty on purpose. |
 | Many eyes | Several facilitators and parents in the room, always. Open, visible spaces. |
 | Be the example | Culture code for adults. Emotional state treated as part of the offer. |
+| Family philosophy | An adult curriculum too — conversation, emotional control, coaching, NLP. Days out as the family's own development. |
+| Learn beside them | Parents in the circle, not on the edge. Children teaching adults. Roles flipping by topic. |
 | Children are useful now | Real jobs, real tools, children maintain their own space. |
 | Value for value | Shopkeepers, stalls, small events, fundraisers, an internal token system for real work. Ship what they build. |
+| One life | Work, learning, children and enjoyment in one place, so nothing has to be escaped from. |
 | Follow the body | Eat, rest, move and go when the body says, not when a bell does. |
 | Get out and live | The days out. Weekly, not monthly. Wide exposure on purpose. |
 | Good, true, beautiful | First-principles filter on every practice. Objective standards named. |
@@ -318,14 +406,45 @@ Built from first principles and observable reality, that alignment is a very pow
 ## Part Four — Still to develop
 
 - The facility application — a separate, longer, more serious process (deliberately not built yet)
-- The token system: what earns tokens, what they buy, and how it stays honest rather than
-  becoming a sticker chart
+- **The adult curriculum, concretely.** Which conversation skills, which emotional-regulation tools,
+  which coaching model, and who teaches them. NLP is named but not yet specified.
+- The token system: what earns tokens, what they buy, and how it stays honest rather than becoming
+  a sticker chart
 - Which of the children's builds actually get published, and who does the paperwork
 - The philosophy curriculum for children — which ideas, at which ages, in what form
 - How the AI academic layer is actually configured, and which apps
-- Money: the real numbers, the founding rate, the add-ons
+- Money: the real numbers, the earliest-family rate, the add-ons
 - Governance — how decisions get made once there are twenty families
-- The book: this document is the spine of it
+- How a parent who is genuinely not ready to be an example is handled, kindly and without a scene
+
+---
+
+## Part Five — Chapter candidates for the book
+
+Not a structure yet, just the natural seams as they have emerged. Roughly in the order a reader
+would need them.
+
+1. **The two lives that will not fit together** — the problem. Providing versus being present.
+2. **Nobody has more at stake than you** — why the responsibility cannot be delegated, and what
+   gets lost when it is.
+3. **The lonely alternative** — why home education frightens people, and what is actually wrong
+   with the picture in their head.
+4. **The adult is not finished** — the family philosophy. The parent's own curriculum.
+5. **Be the person you want them to become** — example as the real syllabus, and the conversation
+   at the dinner table.
+6. **Many eyes** — the long version of why groups behave better than individuals, and why it
+   protects the adults too. (The chapter that cannot be a single line anywhere else.)
+7. **Learn beside them** — humility, being a beginner in front of your child, and letting the
+   child teach you. Confidence as demonstrated usefulness.
+8. **One life, not compartments** — the week that does not need escaping from.
+9. **Follow the body** — signals, rhythm, and what eleven years of bells does to a person.
+10. **Children are useful now** — contribution, ownership, and the room that does not repair itself.
+11. **Value for value** — shopkeepers to real businesses. What Alpha School gets right.
+12. **Find what lights them up** — exposure as a strategy, and why days out are load-bearing.
+13. **The best of every method** — the UFC chapter.
+14. **Joy is a design requirement** — cry when they leave, not when they arrive.
+15. **One direction** — why the group has to agree, and what happens when it does.
+16. **The space** — the barn, and the same idea at every size.
 
 ---
 
@@ -382,4 +501,13 @@ A well-run room beats a badly-run barn every day of the week.
   things back in order."
 - "A magnet works because every particle inside it faces the same way."
 - "The paperwork is an adult's job. The idea, the work and the reward are theirs."
+- "The child is the project; the adult is finished. That is the assumption underneath almost every
+  school gate in the country, and it is wrong."
+- "Confidence is not praise. Confidence is knowing you have a skill that is genuinely of value to
+  somebody else."
+- "Being seen being bad at something in front of your own child is one of the most instructive
+  things you will ever do for them."
+- "No self-respecting adult would ever agree to learn the way we ask children to."
+- "One life you do not need to escape from."
+- "If a large part of the week is something you are getting through, the week is designed wrong."
 - "We would rather be right in five years than consistent for a hundred."
