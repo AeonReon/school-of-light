@@ -27,36 +27,63 @@ And the second line, which is really the same one:
 
 ---
 
-## Part One — The problem we are correcting
+## Part One — The choice people actually have
 
-Raising good children is the most important work in a life. Almost everybody delegates it.
+Where we are, there are two options. Government school, or home education.
 
-Not out of laziness — out of arrangement. The school day was built around a working day that
-mostly no longer exists. So a parent hands their child over for the best hours of the day, to
-people they have not chosen and often never meet, and receives the tired end of them back.
+That is not a figure of speech. There is no spread of alternatives to choose between here. The
+nearest thing is in Belfast, over an hour away, at something like a thousand pounds a month — which
+for a family on the North Coast is not an option, it is a fact about somewhere else. So even the
+people who have decided, and who are willing to pay, have nowhere to go.
 
-Three things follow from that, and all three are damaging.
+### Home education is really alone-school
 
-**The parent stops being the main influence.** School and the peer group become more present in
-a child's life than their mother and father, and the parents are quietly demoted to resource
-providers — the people who pay, drive and feed. That is not a small loss. It is a change in who
-the child is actually being formed by.
+Say "homeschool" to anybody and watch the picture that forms. A child at the kitchen table doing
+dull work. One parent trying to be teacher, cook and company. No friends in the house. A WhatsApp
+group, and a meet-up in a park with a few other children every few weeks if the weather holds.
 
-**Protection is handed over too.** A parent filters what reaches their child: the food, the
-language, the ideas, the tone, the people. Delegate the day and you delegate the filter.
+That picture is not a slur — it is close enough to true that it stops people who would otherwise
+go. **Home education has come to mean alone-school**, and alone is the part people cannot face.
+Not the teaching. Not the paperwork. The loneliness, for the child and for the parent both.
 
-**The family unit weakens over a lifetime.** Families that spend the formative years apart do
-not suddenly become close at eighteen. Proximity in childhood is what a close family at forty is
-made of.
+But alone was never what home education meant. It meant the family taking the job back. Doing it
+by yourself was an accident of there being nowhere to do it together.
 
-The correction is not "everybody should home-educate." The correction is that a very large
-number of parents now work from a laptop, at least part of the time — and once that is true,
-being with your children and providing for them stop having to be two separate lives. Nobody has
-built the place where both happen at once. That is what we are building.
+### Why people leave in the first place
+
+*(This is the reader's own reasoning, not our campaign — see the note below.)*
+
+The families arriving at this decision tend to give the same reasons:
+
+- **No control over the curriculum.** They cannot see it, were not asked about it, and increasingly
+  disagree with parts of it. Content is arriving that they consider ideological and against their
+  own position as parents, and there is no mechanism to opt out of it.
+- **Medical decisions pushed through the school** rather than left with the family.
+- **The model itself is obsolete.** Memorisation is still the primary method in a world where a
+  machine recalls everything instantly. Children are being trained for a shape of work that is
+  disappearing.
+
+By the time somebody reaches us they have usually finished having this argument. They are not
+looking to be convinced; they are looking for somewhere to go.
+
+> **A note on this, for whoever writes the public copy.** None of the above is our pitch. We do not
+> campaign against schools or teachers, for two reasons. Our reader has already left, so the
+> argument is won and repeating it only makes us sound angry. And a good share of the families we
+> want are still in school and only want better weekends — attack the school and we lose them on the
+> first page. Understand the reasons; do not preach them.
+
+### So the real question is not "school or home"
+
+For our reader that has already been settled. The question they are actually holding is narrower,
+and nobody has offered them an answer to it:
+
+> Do I do this alone, or do I do it with other people who want the same thing?
+
+That is what we exist to answer. Not an argument against schooling — a way out of alone-school.
 
 ---
 
-## Part Two — The nineteen principles
+## Part Two — The twenty principles
 
 ### 1. Nobody has more at stake than you
 
@@ -103,7 +130,32 @@ That single change does more than it sounds like it does.
 A family that works on things as one unit stays one unit. That harmony is worth more over forty
 years than any set of results, and it is the thing the current arrangement quietly costs people.
 
-### 4. Find what lights them up — then push hard in that direction
+### 4. We provide the structure. You provide the content.
+
+We are not the experts, and we are not raising your children. You are raising your own children,
+in our facility, alongside other parents doing the same.
+
+What we supply is the **structure**: the place, the equipment, the rhythm, the specialists, the
+standard of the room, and above all the other families. What goes into your child — which books,
+which beliefs, which subjects, what they learn and what they deliberately do not — is **yours**,
+and we have no interest in taking it off you.
+
+That distinction is the whole reason a Charlotte Mason family, a Montessori family, an unschooling
+family and a family with no method at all can be in one room without anybody having to convert.
+They are not signing up to our content. They are using our structure.
+
+So what does a family actually get?
+
+- A group of children worth their child's time, without having to hunt for one
+- A place with the equipment and space almost nobody can build at home
+- Other adults who want the same things, and specialists brought in for what parents cannot teach
+- Their own hours, chosen by them
+- And complete control over what their child learns, or does not
+
+Alone-school gives you the control and takes the community. School gives you the community and
+takes the control. We are trying to be the first place that does not make you choose.
+
+### 5. Find what lights them up — then push hard in that direction
 
 We do not begin with a predetermined outcome for a child. We begin by finding out who they
 already are.
@@ -116,7 +168,7 @@ Once you find it, you do not leave it at "that's nice." You put the resources, t
 the network behind it and push them hard in that direction — so they build a life on a real
 strength rather than a distributed mediocrity across subjects somebody else chose.
 
-### 5. A calm room is the curriculum
+### 6. A calm room is the curriculum
 
 Emotional chaos does more damage to a developing child than almost anything else on the list.
 A child who does not feel safe is not learning, whatever is written on the timetable.
@@ -132,7 +184,7 @@ So the environment is designed for steadiness first:
 Beauty is not decoration here. A beautiful, orderly, calm room teaches something a chaotic one
 cannot.
 
-### 6. Many eyes
+### 7. Many eyes
 
 There are always several adults in the room — multiple facilitators and multiple parents,
 every day, as a matter of how the place is built rather than as a rule anybody has to
@@ -154,7 +206,7 @@ room is full of people who love the children in it.
 > at length it is reassuring. Handled in one line it makes people think about things they were
 > not thinking about, so keep it light everywhere except the long form.
 
-### 7. Be the person you want them to become
+### 8. Be the person you want them to become
 
 Children learn from what adults do, not from what adults say. At three to eight, they are
 copying almost everything — tone of voice, temper, posture, how you treat a stranger, what you
@@ -189,7 +241,7 @@ to grow into.
 This is not a demand for perfection. It is a standing commitment to improve, in public, alongside
 other people doing the same.
 
-### 8. This is a family philosophy, not a children's programme
+### 9. This is a family philosophy, not a children's programme
 
 Most people send a child off to be developed and never once ask the same question of themselves.
 The child is the project; the adult is finished. That is the assumption underneath almost every
@@ -216,7 +268,7 @@ And the days out do more of this than anything else. A family that goes and does
 becomes a different family. Everybody in it gets sharper, better company and better at life — not
 just the children.
 
-### 9. Learn beside them, and let them teach you
+### 10. Learn beside them, and let them teach you
 
 A specialist comes in to teach rhythm, or drawing, or knots. The parents should be in that circle
 too — not supervising it from the edge.
@@ -247,7 +299,7 @@ Adults watch a video, use an app, book a course with somebody who actually does 
 to things because they are enjoyable. Then we send our children somewhere that does none of that
 and wonder why they resist. Do it the adult way, for everybody.
 
-### 10. We do not compare
+### 11. We do not compare
 
 Nobody here is measured against anybody else — not the children, and not the adults.
 
@@ -274,7 +326,7 @@ We do publish general guides to what tends to be possible at each age, because t
 orientation — the way a map is useful. They are not a standard anybody has to meet, and nobody is
 behind for not meeting one.
 
-### 11. Children are useful now
+### 12. Children are useful now
 
 A child is not an apprentice person waiting until twenty-five to begin participating. They have
 real value the moment they can do a real thing.
@@ -292,7 +344,7 @@ live in. A child who takes care of their own place becomes an adult who takes ca
 around them. That is how you get people who are a real asset to their community, and there is no
 shortcut to it.
 
-### 12. Value for value, at their level
+### 13. Value for value, at their level
 
 We want children who understand, early and in their bones, that you get by giving something
 worth having. Not as a lecture about economics — as something they have actually done.
@@ -321,7 +373,7 @@ family becomes service to the group, and service to the group becomes a person w
 provide something their community actually wants. Waiting until twenty-five to begin learning
 that is a strange choice when they could begin at five.
 
-### 13. Follow the body, not the clock
+### 14. Follow the body, not the clock
 
 If a child is hungry they eat. If they are tired they rest. If they need the bathroom they go. If
 their energy is high they climb, and when it drops they take themselves to the books or the costume
@@ -336,7 +388,7 @@ the few that genuinely lasts a lifetime. So we leave it in. Responsibly, and wit
 notice when a child is getting it wrong — but the default is that the child's own body is a better
 guide to the child's own day than a bell is.
 
-### 14. One life, not compartments
+### 15. One life, not compartments
 
 Look at how a normal week is arranged. School is the boring part, so fun is scheduled for
 afterwards. Work is the part you endure, so the evening is the reward. The children are at home all
@@ -357,7 +409,7 @@ improves you too.
 Nothing there is being endured. That is the whole test: if a large part of the week is something
 you are getting through, the week is designed wrong.
 
-### 15. Get out and live
+### 16. Get out and live
 
 The days out are not a warm-up for the real thing. They are a statement of how we think a life
 should be used.
@@ -369,7 +421,7 @@ little and somebody with a great deal can both live this way; it is a decision, 
 Children raised by people who live like that do not need to be told to be ambitious about life.
 They assume it.
 
-### 16. The good, the true and the beautiful
+### 17. The good, the true and the beautiful
 
 We hold that there is such a thing as beauty, and that it is not purely a matter of taste. That
 some ways of living lead to flourishing and others lead somewhere dark. And that finding out
@@ -383,7 +435,7 @@ not.
 The destination we are aiming at: strong families, peaceful and beautiful places to live, and
 people who are a genuine credit to the community around them.
 
-### 17. Joy is a design requirement
+### 18. Joy is a design requirement
 
 Higher-mindedness is supposed to be enjoyable. Not solemn, not grim, not endured.
 
@@ -400,7 +452,7 @@ few produce a child who is excellent and delighted at the same time.
 So we are always asking the same question about everything we do: how could this be more
 enjoyable without being less good?
 
-### 18. Take the best of every method
+### 19. Take the best of every method
 
 When the UFC began, nobody actually knew whether boxing beat wrestling, or karate beat jiu-jitsu.
 Everybody had a tradition and a lot of confidence. So they put them against each other and found
@@ -421,10 +473,23 @@ We are doing the mixed version deliberately:
 - **Things schools mostly skip** — business, money, philosophy, negotiation, how to make
   something and sell it.
 
+**And to be plain about technology: we are not against it.** We are against *certain screens for
+children* — backlit, glowing, endlessly scrolling. Not against the tools themselves. Academic work
+happens on e-ink for a couple of hours a day with apps we have chosen, and films go on a projector.
+That is a considered position about which screen and how long, not a superstition.
+
+The same goes for the adults. A parent working on a laptop three metres from their child is not a
+failure of presence — it is the thing that makes the presence possible, and **children should see
+it.** They ought to know how their family is provided for; it is one of the more useful things they
+can learn. In practice a parent sits near enough to be found while the children are occupied, or
+moves to a quiet room further off for a stretch when another parent is happy to keep an eye. Being
+available is not the same as being stared at, and pretending otherwise is what makes people
+exhausted.
+
 And then we adapt again, continuously, based on the actual children in front of us and how they
 respond. No method owns us. What holds up, stays.
 
-### 19. One direction
+### 20. One direction
 
 A magnet works because every particle inside it faces the same way. Scatter the alignment and it
 is just a lump of metal.
@@ -445,6 +510,7 @@ Built from first principles and observable reality, that alignment is a very pow
 | Nobody has more at stake | Parents stay on site. No drop-off. Parents keep legal responsibility. |
 | Provide and be present | Parent work zone. 8am–8pm, seven days. Come and go. |
 | Nothing happens without you | The plan is made with the parents, in the room. Projects shared across the family. |
+| Structure, not content | We supply the place, the group and the rhythm. What goes into the child stays the parent's. |
 | Find what lights them up | Wide exposure, many days out, materials and tools everywhere, adults who watch and notice. |
 | A calm room | Natural materials, real food only, steady adults, beauty on purpose. |
 | Many eyes | Several facilitators and parents in the room, always. Open, visible spaces. |
@@ -477,6 +543,14 @@ Built from first principles and observable reality, that alignment is a very pow
 - Money: the real numbers, the earliest-family rate, the add-ons
 - Governance — how decisions get made once there are twenty families
 - How a parent who is genuinely not ready to be an example is handled, kindly and without a scene
+
+---
+
+## Part Four-b — How it gets launched
+
+The money architecture lives in `UNIFIED-STRATEGY.md` and the operating plan in `LAUNCH-STRATEGY.md` (this folder): the four-rung ladder, the phase
+gates, the money, and what has to exist before a stranger can be invited. This document says what
+we believe; that one says in what order it happens and what it costs.
 
 ---
 
@@ -571,6 +645,12 @@ Community-level language on everything public. (The domain **thenationoflight.co
 - "Being seen being bad at something in front of your own child is one of the most instructive
   things you will ever do for them."
 - "No self-respecting adult would ever agree to learn the way we ask children to."
+- "Home education has come to mean alone-school, and alone is the part people cannot face."
+- "Alone was never what home education meant. Doing it by yourself was an accident of there being
+  nowhere to do it together."
+- "Alone-school gives you the control and takes the community. School gives you the community and
+  takes the control."
+- "We provide the structure. You provide the content."
 - "One life you do not need to escape from."
 - "Level one is a fine place to begin at six or at forty-six, and it is the only place anybody has
   ever begun."
