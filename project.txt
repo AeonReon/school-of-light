@@ -59,32 +59,56 @@ from Conscious Parenting NI / Days Out NI so all three read as one family:
 Fonts: Poppins (headings) + Inter (body) — same as the app. 3 dark beats: new-world
 principles / how you join / apply.
 
-THE APPLICATION — apply.html (this is a designed experience, do not flatten it into a form)
-Nine screens, one question each, ~3 minutes. Every CTA on index.html points here.
-Placeholder key: YOUR_WEB3FORMS_ACCESS_KEY (once, top of the script). Guard: while it is a
-placeholder the button says "Email it to school@aeonreon.com" instead of erroring.
-One Web3Forms POST at the very end with every answer. localStorage keeps a half-finished
-application alive (key: sol-application-v1), cleared on success.
+TWO APPLICATIONS — THIS IS THE ARCHITECTURE, KEEP IT
+  1. THE DAY OUT (built) — apply.html. Friendly, simple, low pressure. A day out is a
+     low-risk yes, so the application is an invitation, not an interview.
+  2. THE FACILITY (NOT BUILT — deliberately) — a separate, longer, more serious process,
+     to be designed carefully later. It happens with families we already know from the
+     days out. The site says so; do not merge it back into apply.html.
 
-  0  The open        Tone + permission to leave + first small yes ("I would like to be considered")
-  1  Children's ages Tap chips. Zero friction, and it is about their child not about them
-  2  School status   Four options, ALL valid. A mirror, not a filter - teaches that the group is broad
-  3  Principle: tasks not tests   They read it, then react. Endorsing it is a small commitment
-  4  Principle: you stay          The real filter. "What I need is childcare" -> the exit screen
-  5  "What do you want your child to be like at eighteen?"  The emotional core. Gated at 5+ words
-  6  What could you bring         Flips them from customer to member. Chips + optional text
-  7  Details                      Name/email/town/phone/days. LAST, when they are already invested
-  8  Done                         Peak-end: their own words played back, what happens next, the five
-                                  things we believe, one thing to try this week, links to the apps
-  9  The exit                     Warm, honest, hands them Days Out NI + Conscious Parenting instead
+apply.html — 7 screens, ~2 minutes. Every CTA on index.html points here.
+Key: YOUR_WEB3FORMS_ACCESS_KEY (once, top of script). Guard: while it is a placeholder the
+button says "Email it to school@aeonreon.com". One Web3Forms POST at the end.
+localStorage key sol-dayout-application-v1, cleared on success.
 
-WHY IT IS BUILT THIS WAY (keep these if the page is ever rewritten)
-- Self-persuasion: they state the philosophy in their own words, so they own it
-- Effort justification: the more they put in, the more the place is worth to them
-- Progressive commitment: micro-yeses first, personal data last
-- Real turn-away: the exit screen is what makes acceptance mean something
-- Peak-end: the last screen is the emotional high, not a receipt
-- Honest progress bar: the open, the finish and the exit are excluded from it
+  0  The open        "This is the easy bit." Names the first-day awkwardness out loud
+  1  Children's ages Chips. One tap, and it is about their child not about them
+  2  What sort of day would you enjoy   Fun, low stakes, makes them picture it, real planning data
+  3  How our days feel  THE CULTURE FILTER. Good bit first, then What everybody brings /
+                        What we leave at home, then "this is not a purity test" + explicit
+                        permission to work (bring your laptop, take the call)
+  4  What made you look at this   One light open question, NOT gated
+  5  Details         Name/email/town/phone/days. Last, once they have pictured the day
+  6  Done            Peak-end: The Thinking PDF download, what happens next, the five
+                     beliefs, one thing to try this week, links to Days Out NI + the app
+
+CULTURE CODE (the wording matters — it is the whole filter)
+  Brings: good energy + a hand / curiosity both ways / kindness to every child not only
+    your own / food you would be glad for any child to see you eating / your own mess home
+  Leaves at home: smoking or vaping near children / fizzy drinks, sweets, the beige-and-
+    orange end of the menu / talking down to children / turning up to be entertained
+  Then: NOT a purity test, nobody keeping score, the standard is our own example because
+    at 3-8 children copy what they see. And: you ARE allowed to work.
+
+THE THINKING — the-thinking.html -> the-school-of-light.pdf (9 pages, A4)
+Handed over on the day-out finish screen. Sections: why this exists / what we actually are /
+what we believe (5) / how the learning works / the way we are with each other / what the
+facility will be / what it is not / how you go further.
+REGENERATE after editing the HTML (playwright lives in browser-engine, so run it from there):
+  cd APPS/browser-engine && cat > sol-pdf.mjs <<'JS'
+  import { chromium } from 'playwright';
+  const dir = '/Users/aiautomator/Documents/Documents/WEBSITES/PROJECTS/TO BE BUILT/SchoolOfLight/';
+  const b = await chromium.launch();
+  const p = await b.newPage({ viewport: { width: 794, height: 1123 } });
+  await p.goto('file://' + encodeURI(dir + 'the-thinking.html'), { waitUntil: 'networkidle' });
+  await p.emulateMedia({ media: 'print' });
+  await p.pdf({ path: dir + 'the-school-of-light.pdf', format: 'A4', printBackground: true,
+    margin: { top: '18mm', bottom: '16mm', left: '18mm', right: '18mm' } });
+  await b.close();
+  JS
+  node sol-pdf.mjs && rm sol-pdf.mjs
+Cover uses height:228mm so it fits inside those margins — adjust both together if you change them.
+robots.txt hides apply.html, the-thinking.html and the PDF from search.
 
 IMAGES
 Sourced via the browser engine Google Images pass (google-pass.mjs), 4 passes, every
