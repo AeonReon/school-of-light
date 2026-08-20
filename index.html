@@ -319,34 +319,6 @@
     .faq-item.open .faq-a { max-height: 760px; }
     .faq-a p { padding: 0 18px 19px; color: var(--ink-soft); font-size: .97rem; }
 
-    /* ─── Form ─── */
-    .form-wrap { margin: 30px auto 0; text-align: left; max-width: 620px; }
-    .field { margin-bottom: 15px; }
-    .field label { display: block; font-weight: 700; font-size: .88rem; margin-bottom: 6px; color: var(--dark-text); }
-    .field input, .field textarea {
-      width: 100%; padding: 14px 15px; border-radius: 12px;
-      border: 2px solid rgba(246,248,251,.18); background: rgba(246,248,251,.07);
-      color: var(--dark-text); font-family: inherit; font-size: 16px;
-    }
-    .field input::placeholder, .field textarea::placeholder { color: rgba(246,248,251,.42); }
-    .field input:focus, .field textarea:focus { outline: none; border-color: var(--sun); background: rgba(246,248,251,.11); }
-    .field textarea { min-height: 100px; resize: vertical; }
-    .field-row { display: grid; gap: 0; }
-    .hp { position: absolute; left: -9999px; opacity: 0; }
-    .form-fine { margin-top: 14px; font-size: .84rem; color: rgba(246,248,251,.62); text-align: center; }
-    .form-success-msg { text-align: center; padding: 16px 0; }
-    .form-success-msg .check {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 56px; height: 56px; border-radius: 50%; background: var(--sun);
-      color: var(--ink); font-size: 1.8rem; font-weight: 800; margin-bottom: 15px;
-    }
-    #stage2 { margin-top: 28px; border-top: 1px solid rgba(246,248,251,.16); padding-top: 26px; }
-    .stage-tag {
-      display: inline-block; background: rgba(255,206,61,.16); color: var(--sun);
-      font-weight: 800; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
-      padding: 6px 12px; border-radius: var(--radius-pill); margin-bottom: 12px;
-    }
-
     /* ─── Footer ─── */
     footer { background: var(--card); padding: 34px 0; text-align: center; border-top: 1px solid var(--rule); }
     footer p { font-size: .86rem; color: var(--ink-mute); }
@@ -380,7 +352,6 @@
       .levels { grid-template-columns: repeat(2, 1fr); }
       .principles { grid-template-columns: repeat(2, 1fr); }
       .fit { grid-template-columns: repeat(2, 1fr); }
-      .field-row { grid-template-columns: 1fr 1fr; gap: 16px; }
       .offer-row { grid-template-columns: 180px 1fr; gap: 18px; }
       .offer-box { padding: 30px 30px 26px; box-shadow: 9px 9px 0 var(--sun); }
       .hero-image { aspect-ratio: 16/10; }
@@ -460,7 +431,7 @@
         <p class="hero-point"><strong>You get your own work done too.</strong> A work zone for you, a programme running for them. Close by without having to be the entertainment every hour of the day.</p>
         <p class="hero-point"><strong>Alongside school, or instead of it.</strong> Children in school come at weekends and in the holidays. Home-educating families use it as their week.</p>
       </div>
-      <a href="#apply" class="btn-primary large">Apply for an Invitation</a>
+      <a href="apply.html" class="btn-primary large">Apply for an Invitation</a>
       <p class="cta-note">You are applying for an invitation to the next day out.<br />Nothing to sign, nothing to commit to.</p>
     </div>
   </div>
@@ -515,7 +486,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary">Apply for an Invitation</a>
   </div>
 </section>
 
@@ -565,7 +536,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary">Apply for an Invitation</a>
     <p class="cta-note">The application is for the days out. Everything else follows from there.</p>
   </div>
 </section>
@@ -632,7 +603,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary">Apply for an Invitation</a>
   </div>
 </section>
 
@@ -673,7 +644,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary">Apply for an Invitation</a>
   </div>
 </section>
 
@@ -855,7 +826,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary large">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary large">Apply for an Invitation</a>
     <p class="cta-note">Two minutes. Then we talk.</p>
   </div>
 </section>
@@ -909,7 +880,7 @@
     </div>
   </div>
   <div class="container center cta-row fade-up">
-    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
+    <a href="apply.html" class="btn-primary">Apply for an Invitation</a>
   </div>
 </section>
 
@@ -918,95 +889,12 @@
   <div class="container-narrow center fade-up">
     <span class="eyebrow">Apply</span>
     <h2>Ask for an invitation to the next day out.</h2>
-    <p class="lede">Two minutes now. If it looks like a fit, we will be in touch with the next date — and you can
-      see the whole thing for yourself before you decide anything.</p>
-
-    <div class="form-wrap">
-      <!-- ── Stage 1 — the two-minute part ── -->
-      <form id="applyForm" novalidate>
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="School of Light — new application (Stage 1)" />
-        <input type="hidden" name="from_name" value="The School of Light" />
-        <input type="hidden" name="redirect" value="" />
-        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
-
-        <div class="field-row">
-          <div class="field">
-            <label for="f-name">Your name</label>
-            <input type="text" id="f-name" name="Parent name" required placeholder="First and last" autocomplete="name" />
-          </div>
-          <div class="field">
-            <label for="f-email">Email</label>
-            <input type="email" id="f-email" name="Email" required placeholder="you@example.com" autocomplete="email" inputmode="email" />
-          </div>
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label for="f-phone">Phone <span style="font-weight:500;opacity:.6">(optional)</span></label>
-            <input type="tel" id="f-phone" name="Phone" placeholder="07…" autocomplete="tel" inputmode="tel" />
-          </div>
-          <div class="field">
-            <label for="f-town">Your town</label>
-            <input type="text" id="f-town" name="Town" required placeholder="Portrush, Coleraine, Ballymoney…" />
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-ages">Your children's ages</label>
-          <input type="text" id="f-ages" name="Children's ages" required placeholder="e.g. 4 and 7" />
-        </div>
-        <div class="field">
-          <label for="f-school">Are they in school, home-educated, or a bit of both?</label>
-          <input type="text" id="f-school" name="School or home" placeholder="Whatever is true — all three are welcome" />
-        </div>
-        <div class="field">
-          <label for="f-why">What made you read this far? <span style="font-weight:500;opacity:.6">(optional)</span></label>
-          <textarea id="f-why" name="Why" placeholder="A sentence is plenty."></textarea>
-        </div>
-        <button type="submit" class="btn-primary large" id="formSubmit">Apply for an Invitation</button>
-        <p class="form-fine">We will only email you about The School of Light. No list, no forwarding, no noise.</p>
-      </form>
-
-      <!-- ── Stage 2 — the real questions, revealed after stage 1 ── -->
-      <form id="applyForm2" hidden novalidate>
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="School of Light — full application (Stage 2)" />
-        <input type="hidden" name="from_name" value="The School of Light" />
-        <input type="hidden" name="redirect" value="" />
-        <input type="hidden" name="Parent name" id="f2-name" />
-        <input type="hidden" name="Email" id="f2-email" />
-        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
-
-        <div id="stage2">
-          <span class="stage-tag">Step 2 of 2 · optional, but it moves you up</span>
-          <h3 style="color:var(--dark-text); margin-bottom:8px;">The part we actually read.</h3>
-          <p style="color:rgba(246,248,251,.72); margin-bottom:20px; font-size:.98rem;">Answer as much or as little
-            as you like. Families who answer now get on the day out list first.</p>
-
-          <div class="field">
-            <label for="f2-a">What do you want your child to be like at eighteen?</label>
-            <textarea id="f2-a" name="At eighteen" placeholder="However you would put it."></textarea>
-          </div>
-          <div class="field">
-            <label for="f2-b">When your child is having a hard time, how do you handle it?</label>
-            <textarea id="f2-b" name="Hard times" placeholder="There is no right answer. We are looking for fit, not for perfect parents."></textarea>
-          </div>
-          <div class="field">
-            <label for="f2-c">What could you bring to the group?</label>
-            <textarea id="f2-c" name="What you bring" placeholder="A skill, a session you could lead, a trade, an instrument, patience, or simply a pair of hands."></textarea>
-          </div>
-          <div class="field">
-            <label for="f2-d">Which days actually work for your family?</label>
-            <textarea id="f2-d" name="Your week" placeholder="Weekends, weekdays, school holidays — and roughly what your week looks like."></textarea>
-          </div>
-          <div class="field">
-            <label for="f2-e">Is there anything about how a group like this should run that really matters to you?</label>
-            <textarea id="f2-e" name="What matters" placeholder="Something you would want to be true — or something you would want kept out."></textarea>
-          </div>
-          <button type="submit" class="btn-primary large" id="formSubmit2">Send My Answers</button>
-          <p class="form-fine">Read by a person, not scored by a form.</p>
-        </div>
-      </form>
-    </div>
+    <p class="lede">About three minutes. Four real questions as well as the usual details — the sort you rarely
+      get asked out loud, and most people say they enjoyed answering them.</p>
+    <p class="lede">A person reads every one, properly, start to finish. If it looks like a fit, you get an
+      invitation to the next day out and you can see the whole thing for yourself before deciding anything.</p>
+    <div class="cta-row"><a href="apply.html" class="btn-primary large">Apply for an Invitation</a></div>
+    <p class="cta-note">Nothing to sign. Nothing to commit to. You can stop halfway and come back.</p>
   </div>
 </section>
 
@@ -1043,78 +931,6 @@
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   }
 
-  // ─── Application form — two stages, one Web3Forms endpoint ───
-  // Swap YOUR_WEB3FORMS_ACCESS_KEY (both forms) for the real key from web3forms.com,
-  // registered to school@aeonreon.com. Until then the form tells people the truth
-  // instead of throwing a generic error at them.
-  const KEY_IS_LIVE = !document.querySelector('input[name="access_key"]').value.startsWith('YOUR_');
-
-  async function postForm(form) {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    });
-    return res.ok;
-  }
-
-  function notLiveYet(btn) {
-    btn.textContent = 'Email us at school@aeonreon.com';
-    btn.disabled = false;
-    const note = btn.nextElementSibling;
-    if (note) note.textContent = 'Applications by email for the moment — send your name, town and your children’s ages.';
-  }
-
-  const stage1 = document.getElementById('applyForm');
-  const stage2 = document.getElementById('applyForm2');
-
-  stage1.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    if (!stage1.reportValidity()) return;
-    const btn = document.getElementById('formSubmit');
-    if (!KEY_IS_LIVE) { notLiveYet(btn); return; }
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    let ok = false;
-    try { ok = await postForm(stage1); } catch (err) { ok = false; }
-    if (!ok) {
-      btn.textContent = 'Something went wrong — try again';
-      btn.disabled = false;
-      return;
-    }
-    // Carry the identity into stage 2 so the two submissions can be matched up.
-    document.getElementById('f2-name').value = document.getElementById('f-name').value;
-    document.getElementById('f2-email').value = document.getElementById('f-email').value;
-    stage1.innerHTML = '<div class="form-success-msg">'
-      + '<span class="check">✓</span>'
-      + '<h3 style="color:var(--dark-text)">You are on the list.</h3>'
-      + '<p style="margin-top:10px; color:rgba(246,248,251,.75)">We read every application ourselves, so give us a few days. '
-      + 'You will hear from us with the next day out — that is where you meet everybody and see whether this is your kind of group.</p>'
-      + '</div>';
-    stage2.hidden = false;
-    stage2.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
-
-  stage2.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = document.getElementById('formSubmit2');
-    if (!KEY_IS_LIVE) { notLiveYet(btn); return; }
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    let ok = false;
-    try { ok = await postForm(stage2); } catch (err) { ok = false; }
-    if (!ok) {
-      btn.textContent = 'Something went wrong — try again';
-      btn.disabled = false;
-      return;
-    }
-    stage2.innerHTML = '<div class="form-success-msg">'
-      + '<span class="check">✓</span>'
-      + '<h3 style="color:var(--dark-text)">Thank you — that is exactly what we needed.</h3>'
-      + '<p style="margin-top:10px; color:rgba(246,248,251,.75)">A person will read it properly and come back to you. '
-      + 'Keep an eye on your inbox for the invitation.</p>'
-      + '</div>';
-  });
 </script>
 </body>
 </html>

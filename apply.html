@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Apply — The School of Light</title>
+  <meta name="description" content="Ask to be considered for The School of Light. About three minutes. We read every word." />
+  <meta name="theme-color" content="#2C6F9E" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --sky: #4FA4D2; --sky-deep: #2C6F9E; --sky-deeper: #1F5578; --sky-soft: #E0F0FA;
+      --sun: #FFCE3D; --sun-deep: #D89A0F; --sun-soft: #FFF3D6;
+      --leaf: #1F8F5E;
+      --ink: #1A2233; --ink-soft: #4D5A6E; --ink-mute: #7A8898;
+      --paper: #F6F8FB; --paper-warm: #EAF4FB; --card: #FFFFFF;
+      --dark: #16202F; --dark-alt: #22304A; --dark-text: #F6F8FB;
+      --rule: #E1E6EF;
+      --shadow-sm: 0 1px 2px rgba(20,35,60,.06), 0 4px 12px rgba(20,35,60,.08);
+      --shadow-md: 0 2px 4px rgba(20,35,60,.07), 0 10px 28px rgba(20,35,60,.10);
+      --radius: 16px; --radius-pill: 999px;
+      --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --serif: 'Poppins', system-ui, -apple-system, sans-serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { height: 100%; }
+    body {
+      font-family: var(--sans); color: var(--ink); background: var(--paper);
+      line-height: 1.6; font-size: 17px; -webkit-text-size-adjust: 100%;
+      display: flex; flex-direction: column; min-height: 100dvh;
+    }
+    h1, h2, h3 { font-family: var(--serif); line-height: 1.2; letter-spacing: -0.015em; }
+    a { color: var(--sky-deep); }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ─── Chrome ─── */
+    .topbar {
+      position: sticky; top: 0; z-index: 20; background: rgba(246,248,251,.92);
+      backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule);
+    }
+    .topbar-inner {
+      max-width: 680px; margin: 0 auto; padding: 12px 18px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .mark {
+      width: 30px; height: 30px; border-radius: 50%; flex: none;
+      background: radial-gradient(circle at 35% 30%, #FFF3CC, var(--sun) 52%, var(--sun-deep));
+      box-shadow: 0 0 16px rgba(255,206,61,.6);
+    }
+    .topbar .name { font-family: var(--serif); font-weight: 800; font-size: .96rem; flex: 1; }
+    .back {
+      font-size: .86rem; font-weight: 700; color: var(--ink-mute);
+      padding: 8px 10px; border-radius: var(--radius-pill);
+    }
+    .back[hidden] { display: none; }
+    .progress { height: 4px; background: var(--rule); }
+    .progress-fill {
+      height: 100%; width: 0%; background: linear-gradient(90deg, var(--sun), var(--sky));
+      transition: width .45s var(--spring);
+    }
+
+    /* ─── Stage ─── */
+    main { flex: 1; display: flex; align-items: flex-start; }
+    .stage { max-width: 680px; margin: 0 auto; padding: 34px 18px 46px; width: 100%; }
+    .step { display: none; animation: rise .38s ease both; }
+    .step.active { display: block; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .step { animation: none; } .progress-fill { transition: none; } }
+
+    .kicker {
+      display: inline-block; background: var(--sky-soft); color: var(--sky-deep);
+      font-weight: 800; font-size: .68rem; letter-spacing: .13em; text-transform: uppercase;
+      padding: 6px 12px; border-radius: var(--radius-pill); margin-bottom: 16px;
+    }
+    .kicker.sun { background: var(--sun-soft); color: var(--sun-deep); }
+    .step h2 { font-size: 1.62rem; font-weight: 800; margin-bottom: 12px; }
+    .step .sub { color: var(--ink-soft); font-size: 1rem; margin-bottom: 24px; }
+    .step .sub + .sub { margin-top: -14px; }
+
+    /* The philosophy panel — a principle they react to */
+    .panel {
+      background: var(--card); border: 1px solid var(--rule); border-left: 5px solid var(--sun);
+      border-radius: 14px; padding: 20px 20px; margin-bottom: 24px; box-shadow: var(--shadow-sm);
+    }
+    .panel p { color: var(--ink-soft); font-size: 1rem; }
+    .panel p + p { margin-top: 12px; }
+    .panel strong { color: var(--ink); }
+
+    /* ─── Options ─── */
+    .options { display: grid; gap: 11px; }
+    .opt {
+      display: flex; align-items: center; gap: 13px; width: 100%; text-align: left;
+      background: var(--card); border: 2px solid var(--rule); border-radius: 14px;
+      padding: 17px 18px; font-size: 1rem; font-weight: 600; color: var(--ink);
+      transition: border-color .18s, transform .18s var(--spring), box-shadow .18s;
+      line-height: 1.45;
+    }
+    .opt:hover { border-color: var(--sky); }
+    .opt:active { transform: scale(.985); }
+    .opt.selected { border-color: var(--sky-deep); background: var(--sky-soft); box-shadow: var(--shadow-sm); }
+    .opt .tick {
+      width: 24px; height: 24px; border-radius: 50%; flex: none;
+      border: 2px solid var(--rule); display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; font-weight: 800; color: #fff;
+    }
+    .opt.selected .tick { background: var(--sky-deep); border-color: var(--sky-deep); }
+    .opt.selected .tick::after { content: '✓'; }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 9px; }
+    .chip {
+      border: 2px solid var(--rule); background: var(--card); border-radius: var(--radius-pill);
+      padding: 11px 18px; font-weight: 700; font-size: .95rem; color: var(--ink-soft);
+      transition: border-color .18s, transform .18s var(--spring);
+    }
+    .chip:active { transform: scale(.94); }
+    .chip.selected { border-color: var(--sky-deep); background: var(--sky-soft); color: var(--sky-deep); }
+
+    /* ─── Fields ─── */
+    .field { margin-bottom: 16px; }
+    .field label { display: block; font-weight: 700; font-size: .9rem; margin-bottom: 6px; }
+    .field input, .field textarea {
+      width: 100%; padding: 15px 16px; border-radius: 13px; border: 2px solid var(--rule);
+      background: var(--card); font-family: inherit; font-size: 16px; color: var(--ink);
+    }
+    .field input:focus, .field textarea:focus { outline: none; border-color: var(--sky-deep); }
+    .field textarea { min-height: 150px; resize: vertical; line-height: 1.6; }
+    .field .hint { font-size: .84rem; color: var(--ink-mute); margin-top: 6px; }
+    .field-row { display: grid; gap: 0; }
+    .hp { position: absolute; left: -9999px; opacity: 0; }
+    .counter { font-size: .8rem; color: var(--ink-mute); text-align: right; margin-top: 6px; }
+
+    /* ─── Buttons ─── */
+    .btn {
+      background: var(--sky-deep); color: #fff; font-weight: 700; font-size: 1.04rem;
+      padding: 17px 26px; border-radius: var(--radius-pill); border: 3px solid var(--sky-deeper);
+      box-shadow: 0 5px 0 var(--sky-deeper), 0 12px 26px rgba(44,111,158,.26);
+      transition: transform .15s var(--spring), box-shadow .15s, opacity .2s;
+      display: block; width: 100%; text-align: center; margin-top: 26px;
+    }
+    .btn:active { transform: translateY(5px); box-shadow: 0 0 0 var(--sky-deeper), 0 4px 10px rgba(44,111,158,.3); }
+    .btn[disabled] { opacity: .4; pointer-events: none; }
+    .btn-quiet {
+      display: block; width: 100%; text-align: center; margin-top: 14px;
+      font-weight: 600; font-size: .92rem; color: var(--ink-mute); padding: 10px;
+    }
+    .note { margin-top: 16px; font-size: .88rem; color: var(--ink-mute); text-align: center; }
+
+    /* ─── Done / exit ─── */
+    .big-tick {
+      width: 64px; height: 64px; border-radius: 50%; background: var(--sun); color: var(--ink);
+      display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .echo {
+      background: var(--sky-soft); border-radius: 14px; padding: 20px; margin: 22px 0;
+      border-left: 5px solid var(--sky-deep);
+    }
+    .echo .label { font-size: .72rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--sky-deep); margin-bottom: 8px; }
+    .echo .words { font-family: var(--serif); font-weight: 700; font-size: 1.08rem; line-height: 1.5; }
+    .creed { display: grid; gap: 12px; margin: 22px 0 4px; }
+    .creed li { list-style: none; position: relative; padding-left: 28px; color: var(--ink-soft); font-size: .98rem; line-height: 1.55; }
+    .creed li::before { content: '✦'; position: absolute; left: 0; top: 0; color: var(--sun-deep); font-weight: 800; }
+    .creed li strong { color: var(--ink); }
+    .next-steps { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 20px; margin: 22px 0; }
+    .next-steps h3 { font-size: 1.05rem; margin-bottom: 12px; }
+    .next-steps ol { margin-left: 20px; color: var(--ink-soft); font-size: .97rem; display: grid; gap: 8px; }
+    .link-row { display: grid; gap: 10px; margin-top: 20px; }
+    .link-card {
+      display: block; background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+      padding: 16px 18px; color: var(--ink); box-shadow: var(--shadow-sm);
+    }
+    .link-card strong { display: block; font-family: var(--serif); font-weight: 700; margin-bottom: 3px; }
+    .link-card span { font-size: .9rem; color: var(--ink-soft); }
+
+    footer { padding: 22px 18px 30px; text-align: center; }
+    footer p { font-size: .8rem; color: var(--ink-mute); }
+
+    @media (min-width: 620px) {
+      .stage { padding: 46px 24px 60px; }
+      .step h2 { font-size: 2.05rem; }
+      .btn { display: inline-block; width: auto; padding: 18px 40px; }
+      .btn-quiet { width: auto; text-align: left; padding: 10px 0; }
+      .field-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .link-row { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="mark" aria-hidden="true"></div>
+    <div class="name">The School of Light</div>
+    <button class="back" id="backBtn" hidden>← Back</button>
+  </div>
+  <div class="progress"><div class="progress-fill" id="progressFill"></div></div>
+</div>
+
+<main>
+<div class="stage">
+
+  <!-- ══ 0 · The open. Sets tone, gives permission to leave, first small yes. ══ -->
+  <section class="step active" data-step="0" data-noprogress>
+    <span class="kicker sun">Applications open</span>
+    <h2>Before you fill anything in.</h2>
+    <p class="sub">This is a small group, and the whole thing depends on the families in it wanting the same
+      things. So we read every application ourselves — properly, a person, start to finish.</p>
+    <p class="sub">There are a few real questions in here as well as the usual details. They take about three
+      minutes and most people say they enjoyed them, because they are the questions you rarely get asked out loud.</p>
+    <p class="sub">If at any point this does not sound like you, close the tab. It is better for both of us that
+      you find that out now.</p>
+    <button class="btn" data-next>I would like to be considered</button>
+    <a class="btn-quiet" href="index.html">Take me back to read more first</a>
+  </section>
+
+  <!-- ══ 1 · Easiest possible question. About their child, not about them. ══ -->
+  <section class="step" data-step="1">
+    <span class="kicker">Question 1</span>
+    <h2>How old are your children?</h2>
+    <p class="sub">Tap all that apply. We are built around three to eight, but bring the brothers and sisters —
+      we would far rather you all came.</p>
+    <div class="chips" id="ageChips" data-multi>
+      <button class="chip" data-value="Under 3">Under 3</button>
+      <button class="chip" data-value="3">3</button>
+      <button class="chip" data-value="4">4</button>
+      <button class="chip" data-value="5">5</button>
+      <button class="chip" data-value="6">6</button>
+      <button class="chip" data-value="7">7</button>
+      <button class="chip" data-value="8">8</button>
+      <button class="chip" data-value="9 or over">9 or over</button>
+      <button class="chip" data-value="One on the way">One on the way</button>
+    </div>
+    <button class="btn" data-next disabled id="agesNext">Continue</button>
+  </section>
+
+  <!-- ══ 2 · The mirror. Every answer is valid — this teaches them the group is broad. ══ -->
+  <section class="step" data-step="2">
+    <span class="kicker">Question 2</span>
+    <h2>Where are you at with school?</h2>
+    <p class="sub">All of these are welcome here, and the mix is deliberate. There is no wrong answer on this page.</p>
+    <div class="options" data-single data-key="Where they are at">
+      <button class="opt"><span class="tick"></span>They are in school, and I want more for their weekends</button>
+      <button class="opt"><span class="tick"></span>We home-educate, and I want them around other children</button>
+      <button class="opt"><span class="tick"></span>Somewhere in between — flexi, part-time, or it varies</button>
+      <button class="opt"><span class="tick"></span>Mine are not school age yet and I am deciding now</button>
+    </div>
+  </section>
+
+  <!-- ══ 3 · Culture transmission. They read a principle, then endorse it in their own words. ══ -->
+  <section class="step" data-step="3">
+    <span class="kicker sun">How we do it</span>
+    <h2>This is the part that makes us different.</h2>
+    <div class="panel">
+      <p><strong>We give children a goal and no method.</strong></p>
+      <p>"Build a remote control car. Now make it get all the way round a loop." Nobody hands them the
+        instructions. They try it, it fails, they change something, it works.</p>
+      <p>They can ask each other, ask an adult, ask an AI. In most classrooms that is called cheating. Here it is
+        called working — because no adult is ever asked to solve a real problem alone with no help.</p>
+    </div>
+    <p class="sub">How does that land with you?</p>
+    <div class="options" data-single data-key="On tasks not tests">
+      <button class="opt"><span class="tick"></span>That is exactly what I want for them</button>
+      <button class="opt"><span class="tick"></span>I like it, and I have questions</button>
+      <button class="opt"><span class="tick"></span>I am not sure about that yet</button>
+    </div>
+  </section>
+
+  <!-- ══ 4 · The real filter. One answer opens the exit. ══ -->
+  <section class="step" data-step="4">
+    <span class="kicker sun">The one thing we cannot bend on</span>
+    <h2>Here, you stay.</h2>
+    <div class="panel">
+      <p><strong>We do not take your child off your hands.</strong></p>
+      <p>You are in the building. Working in the parent work zone, watching, or joining in — whichever suits the
+        day. Your child can find you in twenty steps whenever they want you.</p>
+      <p>And you stay responsible for them, exactly as you would be at a park or a soft play. That is not a
+        technicality, it is the entire design. It is the reason this place exists.</p>
+    </div>
+    <p class="sub">Is that what you are looking for?</p>
+    <div class="options" data-single data-key="On staying">
+      <button class="opt"><span class="tick"></span>That is the whole reason I am here</button>
+      <button class="opt"><span class="tick"></span>I like it, though I would need to work out the practicalities</button>
+      <button class="opt" data-exit><span class="tick"></span>Honestly, what I need is childcare</button>
+    </div>
+  </section>
+
+  <!-- ══ 5 · The emotional core. They articulate their own hopes in their own words. ══ -->
+  <section class="step" data-step="5">
+    <span class="kicker">The question we care most about</span>
+    <h2>What do you want your child to be like at eighteen?</h2>
+    <p class="sub">Not their job. Not their grades. The person. Two or three sentences is plenty — and there is
+      genuinely no right answer, because we are reading for fit rather than for polish.</p>
+    <div class="field">
+      <textarea id="q-hopes" placeholder="However you would put it, in your own words."></textarea>
+      <div class="counter" id="hopesCount">0 words</div>
+    </div>
+    <button class="btn" data-next disabled id="hopesNext">Continue</button>
+  </section>
+
+  <!-- ══ 6 · Flips them from customer to member. ══ -->
+  <section class="step" data-step="6">
+    <span class="kicker">Question 4</span>
+    <h2>What could you bring to the group?</h2>
+    <p class="sub">Everybody brings something, and most of it is not impressive on paper. Tap anything that fits,
+      then add a line if you like.</p>
+    <div class="chips" id="bringChips" data-multi style="margin-bottom:20px">
+      <button class="chip" data-value="A trade or a skill">A trade or a skill</button>
+      <button class="chip" data-value="Music">Music</button>
+      <button class="chip" data-value="Art or making">Art or making</button>
+      <button class="chip" data-value="Cooking">Cooking</button>
+      <button class="chip" data-value="Outdoors and nature">Outdoors and nature</button>
+      <button class="chip" data-value="Sport or movement">Sport or movement</button>
+      <button class="chip" data-value="Organising things">Organising things</button>
+      <button class="chip" data-value="A calm presence">A calm presence</button>
+      <button class="chip" data-value="Just a pair of hands">Just a pair of hands</button>
+    </div>
+    <div class="field">
+      <textarea id="q-bring" placeholder="Anything you would want us to know (optional)." style="min-height:110px"></textarea>
+    </div>
+    <button class="btn" data-next>Continue</button>
+  </section>
+
+  <!-- ══ 7 · Details last, when they are already invested. ══ -->
+  <section class="step" data-step="7">
+    <span class="kicker">Nearly done</span>
+    <h2>Where do we send the invitation?</h2>
+    <p class="sub">Days out get arranged by area, so your town genuinely matters — it affects where we go and,
+      eventually, where the permanent place lands.</p>
+    <div class="field-row">
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input type="text" id="f-name" placeholder="First and last" autocomplete="name" />
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input type="email" id="f-email" placeholder="you@example.com" autocomplete="email" inputmode="email" />
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="f-phone">Phone <span style="font-weight:500;color:var(--ink-mute)">(optional)</span></label>
+        <input type="tel" id="f-phone" placeholder="07…" autocomplete="tel" inputmode="tel" />
+      </div>
+      <div class="field">
+        <label for="f-town">Your town</label>
+        <input type="text" id="f-town" placeholder="Portrush, Coleraine, Ballymoney…" />
+      </div>
+    </div>
+    <div class="field">
+      <label>Which days actually work for you?</label>
+      <div class="chips" id="dayChips" data-multi>
+        <button class="chip" data-value="Weekday mornings">Weekday mornings</button>
+        <button class="chip" data-value="Weekday afternoons">Weekday afternoons</button>
+        <button class="chip" data-value="Saturdays">Saturdays</button>
+        <button class="chip" data-value="Sundays">Sundays</button>
+        <button class="chip" data-value="School holidays">School holidays</button>
+        <button class="chip" data-value="Evenings">Evenings</button>
+      </div>
+    </div>
+    <input type="checkbox" id="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+    <button class="btn" id="submitBtn" disabled>Send My Application</button>
+    <p class="note">We only email you about The School of Light. No list, no forwarding, no noise.</p>
+  </section>
+
+  <!-- ══ 8 · Peak-end. Their own words played back, then what happens next, then something to keep. ══ -->
+  <section class="step" data-step="8" data-noprogress>
+    <div class="big-tick">✓</div>
+    <h2>That is with us now.</h2>
+    <p class="sub">A person reads every one of these, so give us a few days rather than a few minutes.</p>
+
+    <div class="echo" id="echoBox" hidden>
+      <div class="label">You told us you want them to be</div>
+      <div class="words" id="echoWords"></div>
+    </div>
+    <p class="sub" id="echoTail" hidden>That is the thing we are building. It is the only reason any of this exists.</p>
+
+    <div class="next-steps">
+      <h3>What happens now</h3>
+      <ol>
+        <li>We read your application properly — usually within a week.</li>
+        <li>If it looks like a fit, you get an invitation to the next day out.</li>
+        <li>You come along, meet everybody, and watch your child in the middle of it.</li>
+        <li>You decide. Nothing is signed before any of that.</li>
+      </ol>
+    </div>
+
+    <h3 style="margin-top:26px">While you wait, this is what we believe</h3>
+    <ul class="creed">
+      <li><strong>The family is the centre.</strong> Everything else is supplemental, including us.</li>
+      <li><strong>Children learn by doing difficult things in front of people who like them.</strong> Not by being tested.</li>
+      <li><strong>Asking for help is a skill, not a weakness.</strong> We teach it on purpose.</li>
+      <li><strong>A calm room beats a clever curriculum.</strong> Tone first, always.</li>
+      <li><strong>We are open to the best way.</strong> No method owns us. What holds up, stays.</li>
+    </ul>
+
+    <div class="panel" style="margin-top:26px">
+      <p><strong>One thing to try this week.</strong></p>
+      <p>Give your child a goal instead of an instruction. Not "put the blocks away" but "see if you can get every
+        block into that box before I finish this cup of tea." Then say nothing and watch what they do. That gap —
+        where you want to help and you do not — is where the whole thing lives.</p>
+    </div>
+
+    <div class="link-row">
+      <a class="link-card" href="https://daysoutni.com" target="_blank" rel="noopener">
+        <strong>Days Out NI →</strong><span>Our free guide to everywhere worth going with children in Northern Ireland.</span>
+      </a>
+      <a class="link-card" href="https://new-beginnings.vercel.app" target="_blank" rel="noopener">
+        <strong>Conscious Parenting NI →</strong><span>The free app with the thinking behind all of this.</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ X · The kind exit. Being turned away honestly is what makes acceptance mean something. ══ -->
+  <section class="step" data-step="9" data-noprogress>
+    <span class="kicker sun">An honest answer deserves an honest one back</span>
+    <h2>Then we are the wrong place for you.</h2>
+    <p class="sub">And we would rather say that now than take your money and disappoint you in March.</p>
+    <p class="sub">Childcare is a real need and a completely reasonable one. It is just the single thing we cannot
+      provide — the parent staying is not a policy we could relax, it is the whole reason the place exists.</p>
+    <p class="sub">You are still one of ours though, so take these with you:</p>
+    <div class="link-row">
+      <a class="link-card" href="https://daysoutni.com" target="_blank" rel="noopener">
+        <strong>Days Out NI →</strong><span>Free. The biggest guide to days out in Northern Ireland, and we built it.</span>
+      </a>
+      <a class="link-card" href="https://new-beginnings.vercel.app" target="_blank" rel="noopener">
+        <strong>Conscious Parenting NI →</strong><span>Free. The thinking behind everything on this site.</span>
+      </a>
+    </div>
+    <p class="note" style="margin-top:24px">If your situation changes, the door here stays open. Come back any time.</p>
+    <button class="btn-quiet" data-goto="4" style="margin-top:6px">Actually, let me change that answer</button>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <p>The School of Light · North Coast, Northern Ireland</p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // Swap for the real key from web3forms.com, registered to school@aeonreon.com.
+  var ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+  var KEY_IS_LIVE = ACCESS_KEY.indexOf('YOUR_') !== 0;
+
+  var STORE = 'sol-application-v1';
+  var steps = [].slice.call(document.querySelectorAll('.step'));
+  var fill = document.getElementById('progressFill');
+  var backBtn = document.getElementById('backBtn');
+  var history = [];
+  var current = 0;
+
+  // Progress counts only the real questions — the open, the finish and the exit
+  // are not "progress", so the bar never lies about how much is left.
+  var counted = steps.filter(function (s) { return !s.hasAttribute('data-noprogress'); })
+                     .map(function (s) { return +s.dataset.step; });
+
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE) || '{}'); } catch (e) { state = {}; }
+  function save() { try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) {} }
+
+  function show(n, remember) {
+    if (remember !== false && n !== current) history.push(current);
+    current = n;
+    steps.forEach(function (s) { s.classList.toggle('active', +s.dataset.step === n); });
+    var idx = counted.indexOf(n);
+    if (idx > -1) fill.style.width = Math.round(((idx + 1) / counted.length) * 100) + '%';
+    else if (n >= 8) fill.style.width = '100%';
+    else fill.style.width = '0%';
+    backBtn.hidden = history.length === 0 || n >= 8;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  backBtn.addEventListener('click', function () {
+    if (!history.length) return;
+    show(history.pop(), false);
+  });
+
+  document.querySelectorAll('[data-next]').forEach(function (btn) {
+    btn.addEventListener('click', function () { show(current + 1); });
+  });
+  document.querySelectorAll('[data-goto]').forEach(function (btn) {
+    btn.addEventListener('click', function () { show(+btn.dataset.goto); });
+  });
+
+  // ─── Single-choice options: tap, see it land, move on by itself ───
+  document.querySelectorAll('.options[data-single]').forEach(function (group) {
+    var key = group.dataset.key;
+    group.querySelectorAll('.opt').forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        group.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('selected'); });
+        opt.classList.add('selected');
+        state[key] = opt.textContent.trim();
+        save();
+        var isExit = opt.hasAttribute('data-exit');
+        setTimeout(function () { show(isExit ? 9 : current + 1); }, 420);
+      });
+    });
+  });
+
+  // ─── Multi-choice chips ───
+  function wireChips(id, key, gateBtnId) {
+    var wrap = document.getElementById(id);
+    if (!wrap) return;
+    var gate = gateBtnId ? document.getElementById(gateBtnId) : null;
+    function sync() {
+      var picked = [].slice.call(wrap.querySelectorAll('.chip.selected'))
+                     .map(function (c) { return c.dataset.value; });
+      state[key] = picked.join(', ');
+      save();
+      if (gate) gate.disabled = picked.length === 0;
+    }
+    wrap.querySelectorAll('.chip').forEach(function (chip) {
+      chip.addEventListener('click', function () { chip.classList.toggle('selected'); sync(); });
+    });
+    sync();
+  }
+
+  // ─── The question that matters: gently gate it so it gets a real answer ───
+  var hopes = document.getElementById('q-hopes');
+  var hopesCount = document.getElementById('hopesCount');
+  var hopesNext = document.getElementById('hopesNext');
+  function words(s) { return s.trim() ? s.trim().split(/\s+/).length : 0; }
+  hopes.addEventListener('input', function () {
+    var w = words(hopes.value);
+    hopesCount.textContent = w === 1 ? '1 word' : w + ' words';
+    hopesNext.disabled = w < 5;
+    state['At eighteen'] = hopes.value;
+    save();
+  });
+
+  var bring = document.getElementById('q-bring');
+  bring.addEventListener('input', function () { state['What they bring, in their words'] = bring.value; save(); });
+
+  // ─── Details ───
+  var fields = { 'Parent name': 'f-name', 'Email': 'f-email', 'Phone': 'f-phone', 'Town': 'f-town' };
+  var submitBtn = document.getElementById('submitBtn');
+  function checkDetails() {
+    var name = document.getElementById('f-name').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    var town = document.getElementById('f-town').value.trim();
+    submitBtn.disabled = !(name && /.+@.+\..+/.test(email) && town);
+  }
+  Object.keys(fields).forEach(function (key) {
+    var el = document.getElementById(fields[key]);
+    el.addEventListener('input', function () { state[key] = el.value; save(); checkDetails(); });
+  });
+
+  // ─── Restore anything they typed before wandering off ───
+  Object.keys(fields).forEach(function (key) {
+    if (state[key]) document.getElementById(fields[key]).value = state[key];
+  });
+  if (state['At eighteen']) { hopes.value = state['At eighteen']; hopes.dispatchEvent(new Event('input')); }
+  if (state['What they bring, in their words']) bring.value = state['What they bring, in their words'];
+  var CHIP_GROUPS = [
+    ['ageChips', "Children's ages", 'agesNext'],
+    ['bringChips', 'What they could bring', null],
+    ['dayChips', 'Days that work', null]
+  ];
+  // Restore the ticks first, then wire up — wireChips syncs state and the gate on the way in,
+  // so binding once after the restore keeps the handlers single and the button honest.
+  CHIP_GROUPS.forEach(function (g) {
+    var picked = (state[g[1]] || '').split(', ').filter(Boolean);
+    document.querySelectorAll('#' + g[0] + ' .chip').forEach(function (c) {
+      if (picked.indexOf(c.dataset.value) > -1) c.classList.add('selected');
+    });
+  });
+  CHIP_GROUPS.forEach(function (g) { wireChips(g[0], g[1], g[2]); });
+
+  // Restore any single-choice answers too
+  document.querySelectorAll('.options[data-single]').forEach(function (group) {
+    var answer = state[group.dataset.key];
+    if (!answer) return;
+    group.querySelectorAll('.opt').forEach(function (o) {
+      if (o.textContent.trim() === answer) o.classList.add('selected');
+    });
+  });
+
+  checkDetails();
+
+  // ─── Send ───
+  submitBtn.addEventListener('click', function () {
+    if (document.getElementById('botcheck').checked) return;
+    if (!KEY_IS_LIVE) {
+      submitBtn.textContent = 'Email it to school@aeonreon.com';
+      document.querySelector('#submitBtn + .note').textContent =
+        'The form is not connected yet — send your answers to school@aeonreon.com and we will read them the same way.';
+      return;
+    }
+    submitBtn.textContent = 'Sending…';
+    submitBtn.disabled = true;
+
+    var fd = new FormData();
+    fd.append('access_key', ACCESS_KEY);
+    fd.append('subject', 'School of Light — application from ' + (state['Parent name'] || 'someone'));
+    fd.append('from_name', 'The School of Light');
+    Object.keys(state).forEach(function (k) { if (state[k]) fd.append(k, state[k]); });
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST', body: fd, headers: { 'Accept': 'application/json' }
+    }).then(function (r) {
+      if (!r.ok) throw new Error('bad response');
+      finish();
+    }).catch(function () {
+      submitBtn.textContent = 'Something went wrong — try again';
+      submitBtn.disabled = false;
+    });
+  });
+
+  // ─── The last screen plays their own words back to them ───
+  function finish() {
+    var said = (state['At eighteen'] || '').trim();
+    if (said) {
+      if (said.length > 240) said = said.slice(0, 237).replace(/\s+\S*$/, '') + '…';
+      document.getElementById('echoWords').textContent = '“' + said + '”';
+      document.getElementById('echoBox').hidden = false;
+      document.getElementById('echoTail').hidden = false;
+    }
+    try { localStorage.removeItem(STORE); } catch (e) {}
+    show(8);
+  }
+
+  show(0, false);
+})();
+</script>
+</body>
+</html>
