@@ -480,32 +480,17 @@ Built from first principles and observable reality, that alignment is a very pow
 
 ---
 
-## Part Five — Chapter candidates for the book
+## Part Five — The book
 
-Not a structure yet, just the natural seams as they have emerged. Roughly in the order a reader
-would need them.
+The book now has its own folder and plan: **`BOOKS/school-of-light/overview.md`**
+(working title *Twenty Steps Away*, subtitle *Parents raising their own children, together*).
 
-1. **The two lives that will not fit together** — the problem. Providing versus being present.
-2. **Nobody has more at stake than you** — why the responsibility cannot be delegated, and what
-   gets lost when it is.
-3. **The lonely alternative** — why home education frightens people, and what is actually wrong
-   with the picture in their head.
-4. **The adult is not finished** — the family philosophy. The parent's own curriculum.
-5. **Be the person you want them to become** — example as the real syllabus, and the conversation
-   at the dinner table.
-6. **Many eyes** — the long version of why groups behave better than individuals, and why it
-   protects the adults too. (The chapter that cannot be a single line anywhere else.)
-7. **Learn beside them** — humility, being a beginner in front of your child, and letting the
-   child teach you. Confidence as demonstrated usefulness.
-8. **One life, not compartments** — the week that does not need escaping from.
-9. **Follow the body** — signals, rhythm, and what eleven years of bells does to a person.
-10. **Children are useful now** — contribution, ownership, and the room that does not repair itself.
-11. **Value for value** — shopkeepers to real businesses. What Alpha School gets right.
-12. **Find what lights them up** — exposure as a strategy, and why days out are load-bearing.
-13. **The best of every method** — the UFC chapter.
-14. **Joy is a design requirement** — cry when they leave, not when they arrive.
-15. **One direction** — why the group has to agree, and what happens when it does.
-16. **The space** — the barn, and the same idea at every size.
+Sixteen chapters, roughly fifty pages, one sitting. That file holds the outline, the reader, the
+promise, the reframe, the ten gaps the book cannot be written without, and the tensions that need
+resolving on the page rather than being hoped past.
+
+**This document stays the source of truth for what we believe.** The book plan copies from here,
+never the other way round. Keep dumping raw thinking into this file; chapters get shaped over there.
 
 ---
 
