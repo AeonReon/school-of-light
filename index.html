@@ -188,7 +188,7 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.55); pointer-events: none;
     }
 
-    .hero-points { display: grid; gap: 13px; margin-top: 22px; text-align: left; }
+    .hero-points { display: grid; gap: 13px; text-align: left; width: 100%; }
     .hero-point {
       position: relative; padding-left: 31px; font-size: .98rem;
       color: var(--ink-soft); line-height: 1.55;
@@ -199,7 +199,7 @@
     }
     .hero-point strong { color: var(--ink); font-weight: 700; }
 
-    .hero-tail { display: grid; gap: 14px; justify-items: center; text-align: center; }
+    .hero-tail { display: grid; gap: 20px; justify-items: center; text-align: center; }
     .hero-tail .btn-primary { width: 100%; }
     .hero-tail .cta-note { margin-top: 0; }
 
@@ -429,6 +429,8 @@
 </div>
 
 <!-- ═══ 1 · Hero ═══ -->
+<!-- Order matters on a phone: headline, one sentence, PICTURE, then the points.
+     The image sits high so the page is felt before it is read. -->
 <header class="hero">
   <div class="container hero-inner">
     <div class="hero-lead">
@@ -442,16 +444,9 @@
       <span class="eyebrow">Children 3 to 8 · Parents stay · Applications open</span>
       <h1>Raise them yourself. <span class="em">Just not on your own.</span></h1>
       <p class="hero-sub">
-        The School of Light is a community of Northern Irish families raising our children together —
-        regular days out now, and a permanent place in preparation where children learn and play while
-        their parents work in the next room.
+        You stay with your children through the years that matter most. We bring the friends, the places,
+        the equipment and the people who make the rest of it work.
       </p>
-      <div class="hero-points">
-        <p class="hero-point"><strong>No drop-off, ever.</strong> You stay in the building — working, watching, or joining in. Your child is never handed over to somebody you have not met.</p>
-        <p class="hero-point"><strong>Everything that is hard to do on your own.</strong> The friends, the group projects, the equipment, the specialists, the trips. The part a kitchen table cannot give them.</p>
-        <p class="hero-point"><strong>Alongside school, or instead of it.</strong> Children in school come at weekends and in the holidays. Home-educating families use it as their week.</p>
-        <p class="hero-point"><strong>Built for the world they are moving into.</strong> Real tasks and real problems, rather than memorising what a machine already knows.</p>
-      </div>
     </div>
 
     <div class="hero-image">
@@ -459,6 +454,12 @@
     </div>
 
     <div class="hero-tail">
+      <div class="hero-points">
+        <p class="hero-point"><strong>You are the one who is there.</strong> You are already the biggest influence in your child's life — here you actually get to be it, in the building, all day.</p>
+        <p class="hero-point"><strong>They get a real group of friends.</strong> Mixed ages, group projects, trips and other children they see every week. Nobody is sitting alone at a kitchen table.</p>
+        <p class="hero-point"><strong>You get your own work done too.</strong> A work zone for you, a programme running for them. Close by without having to be the entertainment every hour of the day.</p>
+        <p class="hero-point"><strong>Alongside school, or instead of it.</strong> Children in school come at weekends and in the holidays. Home-educating families use it as their week.</p>
+      </div>
       <a href="#apply" class="btn-primary large">Apply for an Invitation</a>
       <p class="cta-note">You are applying for an invitation to the next day out.<br />Nothing to sign, nothing to commit to.</p>
     </div>
@@ -476,6 +477,45 @@
     <div class="fact"><span class="big">Ages 3 – 8</span><span class="small">The stage the whole thing is built around.</span></div>
     <div class="fact"><span class="big">8am – 8pm</span><span class="small">The hours the facility will keep. Seven days.</span></div>
     <div class="fact"><span class="big">Days Out NI</span><span class="small">By the people behind NI's biggest days out guide.</span></div>
+  </div>
+</section>
+
+<!-- ═══ 2b · Why families come — the three fears, answered, with pictures ═══ -->
+<section class="bg-white">
+  <div class="container center fade-up">
+    <span class="eyebrow">Why families come</span>
+    <h2>Being there should not mean doing it all yourself.</h2>
+    <p class="lede">Three things nearly every parent who contacts us says, more or less word for word.</p>
+  </div>
+  <div class="container cards three fade-up">
+    <div class="card">
+      <div class="card-img"><img src="images/why-close.jpg" alt="A parent crouched down talking with their young child outdoors" loading="lazy" /></div>
+      <div class="card-body">
+        <h3>"I want to be there for it."</h3>
+        <p>Three to eight is the stretch that sets how a person turns out. You do not have to spend it apart from
+          them. You are in the building, twenty steps away, and your child can find you the moment they want you.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="images/why-friends.jpg" alt="A group of children playing together on a big wooden adventure playground" loading="lazy" /></div>
+      <div class="card-body">
+        <h3>"But they need other children."</h3>
+        <p>They do, and that is the honest worry about doing this at home — one child at a table with nobody their
+          own age. Here it is the other way round: a group they see every week, build things with, fall out with,
+          make up with, and grow up alongside.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="images/why-work.jpg" alt="A parent working on a laptop while their young child plays close by" loading="lazy" /></div>
+      <div class="card-body">
+        <h3>"I cannot do it all day, every day."</h3>
+        <p>Nobody can be teacher, cook and entertainment for eleven hours, and saying so is not a failing. There
+          is a quiet work zone for you and a programme running for them. Close by, without being on duty every hour.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container center cta-row fade-up">
+    <a href="#apply" class="btn-primary">Apply for an Invitation</a>
   </div>
 </section>
 
